@@ -1,0 +1,13 @@
+问题3正式第3次
+案例编码: G3WW-HEAT-UQXS-8K7V
+jlog: formal-p3-3-G3WW-HEAT-UQXS-8K7V.jlog（勿改名）
+
+cleared_ok: 12
+clear_fail: 0
+虚拟时间 time_s: 3001.980329
+平均定位清除时间: 250.17 s
+走路: 11284.96 m
+检测次数: 115
+停机: certificate
+退出: user_exit
+程序运行时间: 2.519 s

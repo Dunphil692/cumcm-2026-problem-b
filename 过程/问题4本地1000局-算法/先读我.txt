@@ -1,0 +1,15 @@
+问题4 本地快速模拟包（1000局）
+算法已冻结：N19 + 逆时针顺流 + 1300m扇区延迟 + 奔袭静默
+不要改任何 .py，不要连官方模拟器。
+
+1. 解压后进入 code 目录
+2. pip install numpy
+3. 只跑这一条：
+
+   python run_q4_monte_carlo.py --n 1000 --fidelity fast
+
+8 核大约 15–25 分钟。跑完把终端表格和 results/ 里两个文件发回来：
+  q4_n19_mc_1000_trials.csv
+  q4_n19_mc_1000_summary.json
+
+Windows 也可以双击「一键跑1000局.bat」

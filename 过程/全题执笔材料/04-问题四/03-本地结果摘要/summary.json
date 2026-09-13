@@ -1,0 +1,40 @@
+{
+  "tag": "q4_n19_n1000",
+  "n": 1000,
+  "target_n": 1000,
+  "seed": 2027,
+  "p_dir": 0.5,
+  "policy": "q4",
+  "opts": {
+    "eps": 0.01,
+    "merge": true,
+    "cover_listen": "hear"
+  },
+  "workers": 8,
+  "official_simulator": false,
+  "stop_uses_oracle_remaining": false,
+  "wall_s": 2608.7502291202545,
+  "wall_per_run_s": 26.406447,
+  "clear_rate_worlds": 0.998,
+  "n_not_cleared": 2,
+  "source_clear_rate": 0.9998470012239902,
+  "dir_source_clear_rate": 0.9996967859308672,
+  "omni_source_clear_rate": 1.0,
+  "n_sources_total": 13072,
+  "n_dir_total": 6596,
+  "stop_reason_counts": {
+    "epsilon": 838,
+    "certificate": 162
+  },
+  "time_mean": 6644.318429999999,
+  "time_p50": 6567.76,
+  "time_p25": 6233.555,
+  "time_p75": 6983.585,
+  "time_min": 4756.43,
+  "time_max": 10653.82,
+  "time_std": 593.6807643894496,
+  "per_source_time": 508.3640726855393,
+  "walk_mean": 23781.746600000002,
+  "walk_std": 2337.6442180020463,
+  "measure_mean": 305.127
+}

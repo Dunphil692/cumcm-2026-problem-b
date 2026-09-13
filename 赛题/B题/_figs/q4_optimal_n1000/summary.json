@@ -1,0 +1,43 @@
+{
+  "tag": "q4_optimal_n1000",
+  "algorithm": "N19 CCW + 1300m Sector-Delay Sweep + Dash Silence (Latest Optimal)",
+  "n": 1000,
+  "target_n": 1000,
+  "seed": 2027,
+  "p_dir": 0.5,
+  "workers": 8,
+  "wall_s": 3081.5,
+  "wall_per_run_s": 24.63,
+  "full_clear_rate": 99.6,
+  "n_not_cleared": 4,
+  "total_sources": 13072,
+  "total_cleared": 13068,
+  "overall_clear_rate": 99.97,
+  "total_dir_sources": 6658,
+  "total_dir_cleared": 6654,
+  "dir_clear_rate": 99.94,
+  "omni_clear_rate": 100.0,
+  "stop_reason_counts": {
+    "epsilon": 839,
+    "certificate": 161
+  },
+  "time_s": {
+    "mean": 6627.2,
+    "median": 6543.0,
+    "std": 632.5,
+    "min": 4580.7,
+    "max": 10066.0,
+    "per_source": 507.1
+  },
+  "walk_m": {
+    "mean": 23837.0,
+    "median": 23454.0,
+    "std": 2561.0,
+    "min": 16729.0,
+    "max": 39455.0
+  },
+  "measures": {
+    "mean": 300.4,
+    "median": 300.0
+  }
+}

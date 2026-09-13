@@ -1,0 +1,28 @@
+{
+  "p50_n40": {
+    "n": 40,
+    "clear": 40,
+    "time_mean": 6607.438543628523,
+    "time_p50": 6526.476652832938,
+    "walk_mean": 23772.442718142618,
+    "measures_mean": 299.675,
+    "cover_mean": 18.625,
+    "stop": {
+      "epsilon": 37,
+      "certificate": 3
+    }
+  },
+  "p100_n20": {
+    "n": 20,
+    "clear": 20,
+    "time_mean": 6925.404693751201,
+    "time_p50": 6819.2013597956675,
+    "walk_mean": 24568.02346875601,
+    "measures_mean": 326.0,
+    "cover_mean": 18.75,
+    "stop": {
+      "certificate": 3,
+      "epsilon": 17
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "n": 5000,
+  "seed": 2027,
+  "fidelity": "high",
+  "policy": "belief",
+  "official_simulator": false,
+  "fullopt_godstop_10k_mean_s": 3797.54,
+  "fullopt_godstop_10k_s_per_source": 291.4,
+  "wall_s": 315.38172698020935,
+  "workers": 7,
+  "clear_rate": 1.0,
+  "n_not_cleared": 0,
+  "remaining_if_fail": [],
+  "stop_reason_counts": {
+    "certificate": 5000
+  },
+  "time_mean": 3423.882606716158,
+  "time_p50": 3415.9518330794044,
+  "time_min": 2395.208689732365,
+  "time_max": 4849.071930817922,
+  "time_stdev": 341.81663039782717,
+  "time_mean_cleared": 3423.882606716158,
+  "s_per_source_mean": 266.8539014078881,
+  "walk_mean": 13236.326033580794,
+  "measure_mean": 119.0186,
+  "replan_mean": 22.0846,
+  "cover_mean": 7.0,
+  "cover7_frac": 1.0,
+  "cover_snap_mean": 6.8618,
+  "cover_snap7_frac": 0.8968,
+  "cover_move_mean": 5.8544
+}

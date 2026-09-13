@@ -1,0 +1,36 @@
+支撑材料文件列表（与论文附录 A 一致）
+
+AI工具使用详情.pdf
+
+问题一/
+  问题一代码final_修正版.py
+  问题一_表格与图像.py
+  problem1_localize.py
+  figs/
+
+问题二/
+  code/problem2_model.py
+  code/problem2_paper.py
+  code/problem1_localize.py
+  code/test_problem2.py
+  code/final_refine.py
+  results/problem2_summary.json
+  figs/
+
+问题三/
+  code/ 上场源程序（E15：problem3_belief_struct.py + run_official_e15.py 等）
+  正式日志/formal-p3-1-S589-ME5P-AVEG-7FVF.jlog
+  正式日志/formal-p3-2-CRNF-M248-R8CD-3QE2.jlog
+  正式日志/formal-p3-3-G3WW-HEAT-UQXS-8K7V.jlog
+  正式日志/表1-问题3正式三次.txt
+  本地结果/fullopt_10000/summary.json
+  本地结果/fullopt_10000/trials.csv
+  本地结果/e15_1000_summary.json
+  figs/典型搜索与清除轨迹.png
+
+问题四/
+  code/ 上场源程序（N19：problem4_belief_n19.py + run_official_n19.py 等）
+  正式测试成绩.txt
+  本地结果/n19_1000/summary.json
+  本地结果/n19_1000/trials.csv
+  figs/典型搜索与清除轨迹.png

@@ -1,0 +1,18 @@
+问题3 上场 E15 —— 只传这一份到 Windows
+
+先装：Python 3.10+ ，然后 pip install numpy
+
+1. 解压后进入本文件夹。
+2. 官方模拟器先登录，只点「问题3演练测试」，等5秒倒计时结束。
+3. 不要点「问题3正式测试」。
+4. 打开「命令提示符」或 PowerShell，把队号换成你们的：
+
+   cd /d 本文件夹路径
+   set CUMCM_ROBOT_ID=你们的参赛队号
+   python run_official_smoke.py
+   python run_official_e15.py
+
+PowerShell 用：
+   $env:CUMCM_ROBOT_ID="你们的参赛队号"
+
+冒烟通过、演练能清完，再点正式。点开始或中止都扣一次。

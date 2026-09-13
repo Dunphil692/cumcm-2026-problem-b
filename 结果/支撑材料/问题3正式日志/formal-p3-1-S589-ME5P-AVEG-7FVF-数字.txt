@@ -1,0 +1,13 @@
+问题3正式第1次（脚本里 rehearsal=true 是写死的，以模拟器正式入口和 jlog 文件名为准）
+
+案例编码: S589-ME5P-AVEG-7FVF
+队号: [队号已隐去]
+cleared_ok: 16
+clear_fail: 0
+虚拟时间 time_s: 3524.509928
+平均定位清除时间: 220.28 s  （3524.509928 / 16）
+走路: 13707.55 m
+检测次数: 118
+停机: certificate
+退出: user_exit
+程序运行时间（/enter 到 /exit 墙钟）: 2.694 s

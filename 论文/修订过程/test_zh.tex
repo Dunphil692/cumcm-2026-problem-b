@@ -1,0 +1,26 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setmainfont{Times New Roman}
+\setCJKmainfont{Songti SC}[BoldFont=Heiti SC]
+\setCJKsansfont{Heiti SC}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{a4paper,margin=2.2cm}
+\usepackage{setspace}
+\setstretch{1.5}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\begin{document}
+{\sffamily\bfseries\Large 标题加粗测试}
+
+\begin{center}
+{\sffamily\bfseries\large 摘要}\\[0.4em]
+这是一段居中摘要。$R_{\mathrm{MEC}}=D/2$，$\pm 1^{\circ}$。
+\end{center}
+
+正文宋体 1.5 倍行距。\textbf{加粗汉字}。
+\end{document}

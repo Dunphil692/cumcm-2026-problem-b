@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>无线电干扰源的在线搜索与清除模型</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <style>
+  @page { size: A4; margin: 22mm 20mm; }
+  body { font-family: "Songti SC","PingFang SC","Heiti SC",serif; font-size: 12pt; line-height: 1.7; color: #111; }
+  h1 { font-size: 16pt; text-align: center; margin: 0.2em 0 1em; font-family: "Heiti SC","PingFang SC"; }
+  h2 { font-size: 14pt; margin-top: 1.3em; font-family: "Heiti SC","PingFang SC"; }
+  h3 { font-size: 12.5pt; font-family: "Heiti SC","PingFang SC"; }
+  p { text-align: justify; text-indent: 2em; margin: 0.35em 0; }
+  h1 + p, h2 + p, h3 + p, .noindent { text-indent: 0; }
+  img { display: block; margin: 0.8em auto 0.2em; max-width: 88%; }
+  img + p { text-align: center; text-indent: 0; font-size: 10.5pt; font-weight: bold; margin: 0.2em 0 0.8em; }
+  table { border-collapse: collapse; margin: 0.8em auto; width: 90%; font-size: 10.5pt; }
+  table th { border-top: 1.5px solid #000; border-bottom: 0.75px solid #000; padding: 0.35em 0.5em; text-align: center; }
+  table td { padding: 0.35em 0.5em; text-align: center; }
+  table tr:last-child td { border-bottom: 1.5px solid #000; }
+  math { font-family: "Times New Roman", serif; }
+  blockquote { margin: 0.5em 1em; padding: 0.2em 0.8em; }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">无线电干扰源的在线搜索与清除模型</h1>
+</header>
+<h1
+id="无线电干扰源的在线搜索与清除模型">无线电干扰源的在线搜索与清除模型</h1>
+<h2 id="摘要">摘要</h2>
+<p>在半径为 1800 m 的圆形区域内存在 10–16
+个未知位置的全向干扰源，机器狗从原点出发，搭载测向机逐频道侦测并清除干扰源，目标是最小化完成任务的总时间。针对问题三，本文提出”每频道一张可行区域
++ 覆盖与清除混排 +
+每停一次重规划”的在线策略：为每个频道维护一张”源还可能在哪”的集合（集员估计），把”已经能清的、只听过一次要补测的、覆盖网上还没听过的洞”三类活按总路程选下一站，覆盖义务插在追击路上完成，而非先扫完全场再清；任务结束用”可行域空证书”判定，不依赖剩余源个数。</p>
+<p>本文在本地随机世界上做 10000 次高保真仿真（种子族
+2027，非官方模拟器）。结果表明：本策略清完率 99.90%，总时间中位 3777
+s、均值 3798 s、最短 2126 s、最坏 6864 s，平均行走 14065 m、平均检测 154
+次；而同一种子族上”先走完 7 个覆盖点再清”的静态对照为清完 99.72%、均时
+5512 s，本策略平均缩短 1714 s。约 83% 的局仍会走齐 7
+个覆盖点，但首次清除时平均只到过约 2
+个覆盖点，说明覆盖是被”顺路”完成的。将停机条件改为可行域空证书后（不再使用剩余个数），同种子前
+200 局清完 100%、均时 3868 s，仅比使用剩余个数多约 38
+s，验证了证书停机的可行性。</p>
+<p>本文的创新点在于：①
+把”听见、锁住、清掉”三阶段拆开，用每频道独立可行域承载定位不确定性，否定信息只作用于本频道、不跨频道传播；②
+把覆盖网建模为最坏接收半径下的等圆覆盖问题，并把覆盖义务插在追击路上完成，每停一次用开路哈密顿路重排下一站。模型通过覆盖网覆盖性检验、策略对照检验与鲁棒性检验（10
+个未清局均只剩 1 个源），验证了其有效性与稳定性。</p>
+<p><strong>关键词</strong>：测向交叉定位；集员估计；覆盖路径规划；开路哈密顿路；在线重规划</p>
+<hr />
+<h2 id="一问题重述">一、问题重述</h2>
+<h3 id="问题背景">1.1 问题背景</h3>
+<p>无线电干扰源的快速定位与清除在电磁环境治理、频谱安全保障等场景中具有重要意义。机器狗搭载测向机在指定区域内自主搜索并清除干扰源，其行动包含移动、频道切换、停测、光学定位与激光清除等环节，各环节均产生时间开销，因此需要设计高效的搜索—定位—清除策略，在保证清除率的同时缩短任务总时间。</p>
+<h3 id="问题三重述">1.2 问题三重述</h3>
+<p>问题三研究全向干扰源的在线搜索与清除。给定以原点为圆心、半径 1800 m
+的圆形区域，区域内存在 10–16
+个干扰源，其位置、个数、所在频道均事先未知，且各源频道互不相同（频道
+1–20）。机器狗从原点出发，需要自主完成搜索、定位与清除，目标是在尽可能短的总时间内清除尽可能多的干扰源。约束条件如下：</p>
+<ul>
+<li>每个源的有效接收半径
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>∈</mo><mo stretchy="false" form="prefix">[</mo><mn>1000</mn><mo>,</mo><mn>1500</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R\in[1000,1500]</annotation></semantics></math>
+m 钉在源上，接口不返回该值；</li>
+<li>测向必须停下，一次只能听一个频道，返回仅有
+<code>no_signal</code>、<code>direction</code>（含示向度）、<code>near</code>
+三类；</li>
+<li>示向度误差为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>±</mi><msup><mn>1</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\pm 1^\circ</annotation></semantics></math>，只给角度不给距离；</li>
+<li>距离源
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo><mn>20</mn></mrow><annotation encoding="application/x-tex">\le 20</annotation></semantics></math>
+m
+才能光学定位并激光清除，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\le 5</annotation></semantics></math>
+m 且位于覆盖角内为 <code>near</code>；</li>
+<li>移动速度 5 m/s，停测 5 s，切换频道 1 s，光学定位加激光清除共 5
+s；</li>
+<li>成绩为清除全部干扰源所用的总虚拟时间。</li>
+</ul>
+<p>问题二已给出两站交会的定位区域直径最坏约 111 m，远大于清除半径 20
+m，故本问不能直接复用问题二的候选区；问题三需自行决定每一停的测点位置。</p>
+<hr />
+<h2 id="二问题分析">二、问题分析</h2>
+<h3 id="问题三分析">2.1 问题三分析</h3>
+<p>问题三本质上是一个<strong>不确定环境下的搜索—定位—清除决策问题</strong>，其难点在于：源的位置与频道未知，单次测向只给角度（<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>±</mi><msup><mn>1</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\pm 1^\circ</annotation></semantics></math>）不给距离，且清除要求把定位区域收敛到
+20 m 以内。本文将问题分解为三个相互耦合的子任务：</p>
+<p><strong>（1）听见。</strong> 每个源必须被”听见”一次（得到
+<code>direction</code> 或
+<code>near</code>）才能进入定位环节。由于有效接收半径按最坏情况为 1000
+m，而场地半径为 1800
+m，机器狗必须用有限个测点构成的”覆盖网”保证场地上任意位置的源都至少被听见一次。这是一个<strong>等圆覆盖圆盘</strong>问题：6
+个等圆的覆盖半径比约为 0.5559，盖不住半径 1800 m 的场地；7
+个等圆可以盖住，因此至少需要 7 个覆盖点。</p>
+<p><strong>（2）锁住。</strong>
+听见之后，需要把源的位置收敛到最小外接圆半径
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">E</mi><mi mathvariant="normal">C</mi></mrow></msub><mo>≤</mo><mn>20</mn></mrow><annotation encoding="application/x-tex">R_{\mathrm{MEC}}\le 20</annotation></semantics></math>
+m。单条示向度只能给出一条楔形（无距离信息），必须离开第一条楔形再测一次，且补测点要与源构成较大的交会角；多条示向度的交会区域用半平面交求交得到凸多边形，再求其最小外接圆。</p>
+<p><strong>（3）清掉。</strong> 当定位区域足够小时，走进保证盘
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mo>,</mo><mn>20</mn><mo>−</mo><msub><mi>R</mi><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">E</mi><mi mathvariant="normal">C</mi></mrow></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">B(c,20-R_{\mathrm{MEC}})</annotation></semantics></math>
+内执行清除。</p>
+<p>三者中”听见”是前提，“锁住”是核心，“清掉”是收尾；且三个子任务分布在不同的空间位置，需要统一调度。本文的策略思想是：<strong>把覆盖义务插入到追击路径中，边听边清，每停一次按当前状态重排下一站</strong>，而不是把覆盖、定位、清除分成三个先后阶段。</p>
+<hr />
+<h2 id="三模型假设">三、模型假设</h2>
+<p>为便于建模，本文做如下假设：</p>
+<ol type="1">
+<li><strong>测向误差有界</strong>：每个检测点的示向度误差不超过
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>±</mi><msup><mn>1</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\pm 1^\circ</annotation></semantics></math>，且在同一检测点对同一频道重复测量不改变误差；</li>
+<li><strong>有效接收半径下界已知</strong>：所有源的有效接收半径
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>≥</mo><mn>1000</mn></mrow><annotation encoding="application/x-tex">R\ge 1000</annotation></semantics></math>
+m（按题面最坏情况规划覆盖网）；</li>
+<li><strong>源静止且频道唯一</strong>：每个源位置不变，各源占用互不相同的频道；</li>
+<li><strong>移动匀速</strong>：机器狗以恒定速度 5 m/s
+直线移动，忽略转弯时间；</li>
+<li><strong>测量无漏报</strong>：在有效接收半径内且覆盖角内，<code>direction</code>/<code>near</code>
+的返回是可靠的；</li>
+<li><strong>时间可加</strong>：总时间由移动时间、停测时间、切换时间、清除时间线性叠加。</li>
+</ol>
+<hr />
+<h2 id="四符号说明">四、符号说明</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+<th>单位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">a</mi></mrow></msub><annotation encoding="application/x-tex">R_{\mathrm{arena}}</annotation></semantics></math></td>
+<td>场地半径</td>
+<td>m</td>
+</tr>
+<tr>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math></td>
+<td>干扰源有效接收半径</td>
+<td>m</td>
+</tr>
+<tr>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mrow><mi mathvariant="normal">l</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi></mrow></msub><annotation encoding="application/x-tex">R_{\mathrm{listen}}</annotation></semantics></math></td>
+<td>覆盖网按最坏情况取的听圈半径（1000 m）</td>
+<td>m</td>
+</tr>
+<tr>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Ω</mi><mi>k</mi></msub><annotation encoding="application/x-tex">\Omega_k</annotation></semantics></math></td>
+<td>频道
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+的可行区域</td>
+<td>—</td>
+</tr>
+<tr>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mo>,</mo><mi>r</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">B(c,r)</annotation></semantics></math></td>
+<td>以
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+为圆心、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+为半径的圆盘</td>
+<td>—</td>
+</tr>
+<tr>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo>,</mo><mi>θ</mi><mo>,</mo><mi>ε</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">W(S,\theta,\varepsilon)</annotation></semantics></math></td>
+<td>检测点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+处示向度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math>、半角
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>
+的楔形</td>
+<td>—</td>
+</tr>
+<tr>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">E</mi><mi mathvariant="normal">C</mi></mrow></msub><annotation encoding="application/x-tex">R_{\mathrm{MEC}}</annotation></semantics></math></td>
+<td>定位区域最小外接圆半径</td>
+<td>m</td>
+</tr>
+<tr>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math></td>
+<td>示向度</td>
+<td>°</td>
+</tr>
+<tr>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>,</mo><msub><mi>t</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">e</mi></mrow></msub><mo>,</mo><msub><mi>t</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>,</mo><msub><mi>t</mi><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">w</mi></mrow></msub><mo>,</mo><msub><mi>t</mi><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">r</mi></mrow></msub></mrow><annotation encoding="application/x-tex">T, t_{\mathrm{move}}, t_{\mathrm{meas}}, t_{\mathrm{sw}}, t_{\mathrm{clr}}</annotation></semantics></math></td>
+<td>总时间及各环节时间</td>
+<td>s</td>
+</tr>
+<tr>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math></td>
+<td>移动速度（5 m/s）</td>
+<td>m/s</td>
+</tr>
+<tr>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝒯</mi><annotation encoding="application/x-tex">\mathcal{T}</annotation></semantics></math></td>
+<td>当前任务集合</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>其余符号在首次出现处说明。</p>
+<hr />
+<h2 id="五模型建立与求解">五、模型建立与求解</h2>
+<h3 id="模型准备时间构成与问题拆解">5.1
+模型准备：时间构成与问题拆解</h3>
+<p>一次完整任务的虚拟时间由四部分构成：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><msub><mi>t</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">e</mi></mrow></msub><mo>+</mo><msub><mi>t</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>+</mo><msub><mi>t</mi><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">w</mi></mrow></msub><mo>+</mo><msub><mi>t</mi><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">r</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
+T = t_{\mathrm{move}} + t_{\mathrm{meas}} + t_{\mathrm{sw}} + t_{\mathrm{clr}}
+</annotation></semantics></math></p>
+<p>其中移动时间由总路程决定：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">e</mi></mrow></msub><mo>=</mo><mfrac><mi>L</mi><mi>v</mi></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mi>v</mi><mo>=</mo><mn>5</mn><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow><annotation encoding="application/x-tex">
+t_{\mathrm{move}} = \frac{L}{v}, \quad v = 5\ \mathrm{m/s}
+</annotation></semantics></math></p>
+<p>单次停测 5 s、单次切换频道 1 s、单次成功清除 5
+s。由于一次任务中移动路程约 14065 m、检测约 154 次，移动时间约占总时间的
+74%，因此<strong>缩短总时间的关键是缩短移动路程</strong>，其次是减少冗余检测。</p>
+<p>据此，本文把问题三拆成三个相互衔接但不必串行的环节：</p>
+<ol type="1">
+<li><strong>听见</strong>（覆盖义务）：保证每只源至少被听见一次；</li>
+<li><strong>锁住</strong>（定位）：把源收敛到
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">E</mi><mi mathvariant="normal">C</mi></mrow></msub><mo>≤</mo><mn>20</mn></mrow><annotation encoding="application/x-tex">R_{\mathrm{MEC}}\le 20</annotation></semantics></math>
+m；</li>
+<li><strong>清掉</strong>（收尾）：进入保证盘清除。</li>
+</ol>
+<p>三者可以<strong>边听边锁边清</strong>，覆盖义务只是”必须完成”，不要求”最先完成”。</p>
+<h3 id="覆盖网最坏-1000-m-的等圆覆盖">5.2 覆盖网：最坏 1000 m
+的等圆覆盖</h3>
+<p>有效接收半径
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>≥</mo><mn>1000</mn></mrow><annotation encoding="application/x-tex">R\ge 1000</annotation></semantics></math>
+m，场地半径
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">a</mi></mrow></msub><mo>=</mo><mn>1800</mn></mrow><annotation encoding="application/x-tex">R_{\mathrm{arena}}=1800</annotation></semantics></math>
+m。为保证场地上任意位置的源都至少被听见一次，覆盖点需满足：场地内任意点到最近覆盖点的距离
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo><mn>1000</mn></mrow><annotation encoding="application/x-tex">\le 1000</annotation></semantics></math>
+m。这是经典的<strong>等圆覆盖圆盘</strong>问题[3]。</p>
+<p>设
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+个等圆覆盖半径为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">a</mi></mrow></msub><annotation encoding="application/x-tex">R_{\mathrm{arena}}</annotation></semantics></math>
+的圆盘，其”覆盖半径比”为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mi>r</mi><mi>/</mi><msub><mi>R</mi><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">a</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\rho = r/R_{\mathrm{arena}}</annotation></semantics></math>。对
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">n=6</annotation></semantics></math>，等圆覆盖的最佳覆盖半径比约为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mn>6</mn></msub><mo>≈</mo><mn>0.5559</mn></mrow><annotation encoding="application/x-tex">\rho_6 \approx 0.5559</annotation></semantics></math>，对应覆盖半径
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.5559</mn><mo>×</mo><mn>1800</mn><mo>≈</mo><mn>1000.6</mn></mrow><annotation encoding="application/x-tex">0.5559\times 1800 \approx 1000.6</annotation></semantics></math>
+m，恰大于 1000 m，<strong>盖不住</strong>；对
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>7</mn></mrow><annotation encoding="application/x-tex">n=7</annotation></semantics></math>，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mn>7</mn></msub><mo>=</mo><mn>0.5</mn></mrow><annotation encoding="application/x-tex">\rho_7 = 0.5</annotation></semantics></math>，覆盖半径
+900 m，<strong>盖得住</strong>。故至少需要 7 个覆盖点。</p>
+<p>本文取<strong>原点 + 半径 1200 m 的正六边形</strong>共 7 个覆盖点（图
+1）。该构型下，场地边缘最坏点（位于两相邻六边形顶点之间）到最近覆盖点的距离为</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi mathvariant="normal">max</mi></msub><mo>=</mo><msqrt><mrow><msup><mn>1200</mn><mn>2</mn></msup><mo>+</mo><msup><mn>1800</mn><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><mn>1200</mn><mo>⋅</mo><mn>1800</mn><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><msup><mn>30</mn><mo>∘</mo></msup></mrow></msqrt><mo>≈</mo><mn>969</mn><mspace width="0.222em"></mspace><mi mathvariant="normal">m</mi><mo>&lt;</mo><mn>1000</mn><mspace width="0.222em"></mspace><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/x-tex">
+d_{\max} = \sqrt{1200^2 + 1800^2 - 2\cdot 1200\cdot 1800\cos 30^\circ} \approx 969\ \mathrm{m} &lt; 1000\ \mathrm{m}
+</annotation></semantics></math></p>
+<p>故 7 点覆盖网能保证最坏
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mn>1000</mn></mrow><annotation encoding="application/x-tex">R=1000</annotation></semantics></math>
+m 时每只源至少被听见一次。</p>
+<figure>
+<img src="figures/fig1_七点覆盖网.png" alt="图1 七点覆盖网" />
+<figcaption aria-hidden="true">图1 七点覆盖网</figcaption>
+</figure>
+<p><strong>图 1　七点覆盖网（原点 + 半径 1200 m 正六边形，听圈半径 1000
+m）</strong></p>
+<p>需要强调的是：覆盖是”义务”而不是”工序”。追击途中路过覆盖点即可顺带完成覆盖；但尚未完成的覆盖点不能被删除，直到已经听见
+16 只源（题面上限）后普查义务才结束。另外，挖洞证书取 990
+m（略小于最坏接收半径 1000 m），故 990–1000 m
+之间会剩一圈”假边”；若某频道 1000 m
+的听盘已被覆盖，这圈不构成新洞，跳过即可，不必为它再跑一个六边形顶点。</p>
+<h3 id="每频道一张可行区域集员估计">5.3
+每频道一张可行区域（集员估计）</h3>
+<p>对频道
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+维护一张可行区域
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Ω</mi><mi>k</mi></msub><annotation encoding="application/x-tex">\Omega_k</annotation></semantics></math>（集合，而非概率分布），初始为整个场地圆盘。定位误差未知但有界时，采用集员估计的集合收缩而非概率滤波更直接、也更贴合题面返回[2]：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi mathvariant="normal">Ω</mi><mi>k</mi><mrow><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow></msubsup><mo>=</mo><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>O</mi><mo>,</mo><msub><mi>R</mi><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">a</mi></mrow></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+\Omega_k^{(0)} = B(O, R_{\mathrm{arena}})
+</annotation></semantics></math></p>
+<p>每得到一次测量，按以下规则收缩
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Ω</mi><mi>k</mi></msub><annotation encoding="application/x-tex">\Omega_k</annotation></semantics></math>：</p>
+<ul>
+<li>若在
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+处得到 <code>no_signal</code>，则源距
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+超过其接收半径（至少 990 m），挖掉
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo>,</mo><mn>990</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">B(S,990)</annotation></semantics></math>：</li>
+</ul>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Ω</mi><mi>k</mi></msub><mo>←</mo><msub><mi mathvariant="normal">Ω</mi><mi>k</mi></msub><mo>\</mo><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo>,</mo><mn>990</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+\Omega_k \leftarrow \Omega_k \setminus B(S, 990)
+</annotation></semantics></math></p>
+<ul>
+<li>若在
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+处得到 <code>direction</code>（示向度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math>），则源落在
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>±</mo><msup><mn>1</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\theta\pm 1^\circ</annotation></semantics></math>
+的楔形内，且距
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+不超过 1500 m：</li>
+</ul>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Ω</mi><mi>k</mi></msub><mo>←</mo><msub><mi mathvariant="normal">Ω</mi><mi>k</mi></msub><mo>∩</mo><mi>W</mi><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo>,</mo><mi>θ</mi><mo>,</mo><msup><mn>1</mn><mo>∘</mo></msup><mo stretchy="false" form="postfix">)</mo><mo>∩</mo><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo>,</mo><mn>1500</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+\Omega_k \leftarrow \Omega_k \cap W(S,\theta,1^\circ) \cap B(S,1500)
+</annotation></semantics></math></p>
+<ul>
+<li>若得到 <code>near</code> 或清除成功，则该频道结案。</li>
+</ul>
+<p>楔形
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo>,</mo><mi>θ</mi><mo>,</mo><mi>ε</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">W(S,\theta,\varepsilon)</annotation></semantics></math>
+由两条示向度边界射线张成，其每条边界可用半平面不等式描述。测向交会是被动定位的经典手段[1]；本题示向度误差是
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>±</mi><msup><mn>1</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\pm 1^\circ</annotation></semantics></math>
+的有界带而非随机椭圆，故直接做楔形求交，而不采用统计椭圆模型。设
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mi>S</mi></msub><mo>,</mo><msub><mi>y</mi><mi>S</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">S=(x_S,y_S)</annotation></semantics></math>，边界方向角
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>±</mo><mi>ε</mi></mrow><annotation encoding="application/x-tex">\theta\pm\varepsilon</annotation></semantics></math>，则该半平面为</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>θ</mi><mo>±</mo><mi>ε</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>θ</mi><mo>±</mo><mi>ε</mi><mo stretchy="false" form="postfix">)</mo><msup><mo stretchy="false" form="postfix">)</mo><mo>⟂</mo></msup><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mi>P</mi><mo>−</mo><mi>S</mi><mo stretchy="false" form="postfix">)</mo><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+(\cos(\theta\pm\varepsilon), \sin(\theta\pm\varepsilon))^{\perp} \cdot (P - S) \ge 0
+</annotation></semantics></math></p>
+<p>多个楔形相交即得到凸多边形可行域。<strong>关键一点</strong>：<code>no_signal</code>
+挖洞只挖<strong>本频道自己</strong>的可行域，不能把别的未听频道一并挖掉——否则一个频道的否定信息会误删另一个尚未被听见的源，导致其永远无法被定位（本文在策略对照中验证了这一点）。</p>
+<p>对已有多条示向度的频道，其可行域为凸多边形，记其顶点集为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>，最小外接圆半径为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">E</mi><mi mathvariant="normal">C</mi></mrow></msub><annotation encoding="application/x-tex">R_{\mathrm{MEC}}</annotation></semantics></math>。当</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">E</mi><mi mathvariant="normal">C</mi></mrow></msub><mo>≤</mo><mn>20</mn><mspace width="0.222em"></mspace><mi mathvariant="normal">m</mi></mrow><annotation encoding="application/x-tex">
+R_{\mathrm{MEC}} \le 20\ \mathrm{m}
+</annotation></semantics></math></p>
+<p>时，源已”锁住”，可以从圆心
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+出发、进入保证盘</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>c</mi><mo>,</mo><mspace width="0.222em"></mspace><mn>20</mn><mo>−</mo><msub><mi>R</mi><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">E</mi><mi mathvariant="normal">C</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+B\left(c,\ 20 - R_{\mathrm{MEC}}\right)
+</annotation></semantics></math></p>
+<p>内执行清除。图 2 展示了可行域从整圆、经挖洞、到交楔形的三态演化。</p>
+<figure>
+<img src="figures/fig2_单频道可行域三态.png"
+alt="图2 单频道可行域三态" />
+<figcaption aria-hidden="true">图2 单频道可行域三态</figcaption>
+</figure>
+<p><strong>图 2　单频道可行域三态（整圆 → no_signal 挖洞 → direction
+交楔形）</strong></p>
+<p>为控制检测开销，空频道（从未响过的频道）不在每站都扫 20
+台，只在覆盖点上、或离上次听空台已走
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≥</mo><mn>700</mn></mrow><annotation encoding="application/x-tex">\ge 700</annotation></semantics></math>
+m 时才听一次。</p>
+<h3 id="三类任务混排与每停一次重规划">5.4
+三类任务混排与每停一次重规划</h3>
+<p>每一停，机器狗从当前点对手头所有任务求一条<strong>开路最短哈密顿路</strong>，只走其中的下一站，到达后重新规划。记当前任务集合为</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝒯</mi><mo>=</mo><msub><mi>𝒯</mi><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi></mrow></msub><mo>∪</mo><msub><mi>𝒯</mi><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi></mrow></msub><mo>∪</mo><msub><mi>𝒯</mi><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
+\mathcal{T} = \mathcal{T}_{\mathrm{clear}} \cup \mathcal{T}_{\mathrm{station}} \cup \mathcal{T}_{\mathrm{cover}}
+</annotation></semantics></math></p>
+<p>三类任务分别为：</p>
+<ol type="1">
+<li><strong>能清</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>𝒯</mi><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi></mrow></msub><annotation encoding="application/x-tex">\mathcal{T}_{\mathrm{clear}}</annotation></semantics></math>：<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">E</mi><mi mathvariant="normal">C</mi></mrow></msub><mo>≤</mo><mn>20</mn></mrow><annotation encoding="application/x-tex">R_{\mathrm{MEC}}\le 20</annotation></semantics></math>，任务目标是进入保证盘；</li>
+<li><strong>补测 / 探点</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>𝒯</mi><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi></mrow></msub><annotation encoding="application/x-tex">\mathcal{T}_{\mathrm{station}}</annotation></semantics></math>：只有一条楔形、或定位区域仍太大。补测站概念上是问题二的保证再听见范围
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mrow><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">v</mi></mrow></msub><annotation encoding="application/x-tex">C_{\mathrm{recv}}</annotation></semantics></math>——离开第一条楔形、保证还能再听见；实现上取沿示向离开约
+1200 m、偏开
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>±</mi><msup><mn>35</mn><mo>∘</mo></msup><mi>/</mi><msup><mn>50</mn><mo>∘</mo></msup><mi>/</mi><msup><mn>90</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\pm 35^\circ/50^\circ/90^\circ</annotation></semantics></math>
+的候选点，不去问题二的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math>
+最优点 (844, ±544)（两站交会直径最坏约 111 m，远大于 20
+m，清不掉）。若外接圆半径已
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo><mn>200</mn></mrow><annotation encoding="application/x-tex">\le 200</annotation></semantics></math>
+m，则直接去圆心近听，往往比去远处补第二站更快；</li>
+<li><strong>听洞</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>𝒯</mi><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi></mrow></msub><annotation encoding="application/x-tex">\mathcal{T}_{\mathrm{cover}}</annotation></semantics></math>：7
+点覆盖网里，对该频道仍有未听格子的点。</li>
+</ol>
+<p>开路最短哈密顿路（不必回原点）在任务点数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo><mn>16</mn></mrow><annotation encoding="application/x-tex">\le 16</annotation></semantics></math>
+时用 Held–Karp 算法[4]精确求解，点数更多时用 2-opt 启发式。设
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><annotation encoding="application/x-tex">d_{ij}</annotation></semantics></math>
+为任务
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i,j</annotation></semantics></math>
+间的距离，Held–Karp 的状态转移为</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>p</mi><mo stretchy="false" form="prefix">[</mo><mi>m</mi><mi>a</mi><mi>s</mi><mi>k</mi><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="prefix">[</mo><mi>j</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><munder><mi mathvariant="normal">min</mi><mrow><mi>i</mi><mo>∈</mo><mi>m</mi><mi>a</mi><mi>s</mi><mi>k</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>i</mi><mo>≠</mo><mi>j</mi></mrow></munder><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">{</mo><mi>d</mi><mi>p</mi><mo stretchy="false" form="prefix">[</mo><mi>m</mi><mi>a</mi><mi>s</mi><mi>k</mi><mo>\</mo><mo stretchy="false" form="prefix">{</mo><mi>j</mi><mo stretchy="false" form="postfix">}</mo><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="prefix">[</mo><mi>i</mi><mo stretchy="false" form="postfix">]</mo><mo>+</mo><msub><mi>d</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">
+dp[mask][j] = \min_{i\in mask,\ i\neq j}\ \left\{ dp[mask\setminus\{j\}][i] + d_{ij} \right\}
+</annotation></semantics></math></p>
+<p>对已经能清除的源，其”城市”是一个保证盘（半径
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>−</mo><msub><mi>R</mi><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">E</mi><mi mathvariant="normal">C</mi></mrow></msub></mrow><annotation encoding="application/x-tex">20-R_{\mathrm{MEC}}</annotation></semantics></math>）而非单点，属于几何覆盖旅行商问题（TSPN）[5]；进入点取盘边界上离上一站最近的点，从而进一步缩短路程。</p>
+<p>图 3 给出三类任务混排的决策流程。</p>
+<figure>
+<img src="figures/fig3_三类任务混排.png" alt="图3 三类任务混排流程图" />
+<figcaption aria-hidden="true">图3 三类任务混排流程图</figcaption>
+</figure>
+<p><strong>图
+3　三类任务混排决策流程（停机判据：可行域空证书是否成立——已听见的频道都清完或不再追，且覆盖网上无待听洞，或已听见
+16 只）</strong></p>
+<p><strong>收尾与兜底</strong>（保证稳定性）：</p>
+<ul>
+<li>当外接圆半径
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo><mn>40</mn></mrow><annotation encoding="application/x-tex">\le 40</annotation></semantics></math>
+m 时，沿最新示向走 6 m 小步、每步都测，避免跨过 5 m 的 <code>near</code>
+区；</li>
+<li>近源楔形若远距离补站听空（源离第一听见点很近、补测站过冲到接收半径之外），则走回第一次听见的那一站，再沿示向
+6 m 瞄准；</li>
+<li>单次兜底走路设 3000 m 预算，防止追着漂移的外接圆圆心满场跑。</li>
+</ul>
+<p><strong>停机条件（可行域空证书）。</strong>
+官方接口不返回”还剩几只”，任务结束不能用剩余个数判定。本文用可行域空证书停机：所有已听见的频道要么已清除、要么不再追击，且
+7 点覆盖网上不存在仍需听的洞（990–1000 m 的假环不算新洞）；或已听见 16
+只源（题面上限）。该停机条件只依赖题面可得的测量信息，不引入额外假设。</p>
+<h3 id="结果分析">5.5 结果分析</h3>
+<p>在本地随机世界（种子族
+2027，高保真半平面交，<strong>非官方模拟器</strong>）上做 10000
+次仿真，三种策略对比如表 1、图 4、图 5 所示。</p>
+<p><strong>表 1　三种策略本地 10000 局结果对比</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>策略</th>
+<th>局数</th>
+<th>清完率</th>
+<th>均时 / s</th>
+<th>中位 / s</th>
+<th>均走 / m</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>静态：先 7 点普查再清</td>
+<td>10000</td>
+<td>99.72%</td>
+<td>5512</td>
+<td>5410</td>
+<td>22536</td>
+</tr>
+<tr>
+<td>早期动态（未加固）</td>
+<td>10000</td>
+<td>98.74%</td>
+<td>4340</td>
+<td>4287</td>
+<td>16617</td>
+</tr>
+<tr>
+<td><strong>上场：可行域 + 混排</strong></td>
+<td><strong>10000</strong></td>
+<td><strong>99.90%</strong></td>
+<td><strong>3798</strong></td>
+<td><strong>3777</strong></td>
+<td><strong>14065</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>表 2　可行域空证书停机抽检（同种子前 200
+局，问题一修正版几何）</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>停机方式</th>
+<th>局数</th>
+<th>清完率</th>
+<th>均时 / s</th>
+<th>中位 / s</th>
+<th>走齐 7 点占比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>可行域空证书（上场）</strong></td>
+<td><strong>200</strong></td>
+<td><strong>100%</strong></td>
+<td><strong>3868</strong></td>
+<td><strong>3837</strong></td>
+<td><strong>100%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>上场策略的补充统计：平均检测约 154 次；最短 2126 s，最坏 6864
+s，四分位区间 3506–4059 s；约 83% 的局走齐 7
+个覆盖点，但首次清除时平均只到过约 2 个覆盖点。表 1 的 1
+万局循环用了本地的剩余个数作停机，仅用于方法对比；把停机改为可行域空证书（表
+2）后，同种子前 200 局清完 100%、均时 3868 s、中位 3837
+s，比用剩余个数多约 38 s，且走齐 7 点的局由 82.5% 升到
+100%（清完最后一只后仍需把剩余覆盖点走完，才能证明空频道为空），说明证书停机对成绩影响很小。</p>
+<figure>
+<img src="figures/fig4_策略对比.png" alt="图4 策略对比" />
+<figcaption aria-hidden="true">图4 策略对比</figcaption>
+</figure>
+<p><strong>图 4　三种策略的清完率与平均总时间对比</strong></p>
+<figure>
+<img src="figures/fig5_时间分布箱线图.png" alt="图5 时间分布箱线图" />
+<figcaption aria-hidden="true">图5 时间分布箱线图</figcaption>
+</figure>
+<p><strong>图
+5　三种策略总时间分布（箱线图，n=10000；纵轴截断，离群值见图中标注）</strong></p>
+<p>从表 1、图 4、图 5 可见：</p>
+<ol type="1">
+<li>本策略较静态对照平均缩短
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5512</mn><mo>−</mo><mn>3798</mn><mo>=</mo><mn>1714</mn></mrow><annotation encoding="application/x-tex">5512 - 3798 = 1714</annotation></semantics></math>
+s（约 31%），中位缩短 1633 s；</li>
+<li>本策略较早期动态平均再缩短
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4340</mn><mo>−</mo><mn>3798</mn><mo>=</mo><mn>542</mn></mrow><annotation encoding="application/x-tex">4340 - 3798 = 542</annotation></semantics></math>
+s，且清完率由 98.74% 提升到 99.90%；</li>
+<li>最坏单局从早期动态的 112965 s 压到 6864
+s，时间分布尾部大幅收窄，策略稳定性显著提高。</li>
+</ol>
+<p>图 6
+展示了覆盖点的访问时序：覆盖点并非开局集中扫完，而是随追击进度逐步被访问——这正是”覆盖插在路上做”的直接证据。</p>
+<figure>
+<img src="figures/fig6_覆盖点访问时序.png" alt="图6 覆盖点访问时序" />
+<figcaption aria-hidden="true">图6 覆盖点访问时序</figcaption>
+</figure>
+<p><strong>图 6　覆盖点随任务进度的访问时序（本地 200 局）</strong></p>
+<h3 id="模型检验">5.6 模型检验</h3>
+<p><strong>（1）覆盖网覆盖性检验。</strong> 对 7 点覆盖网（原点 + 半径
+1200 m 正六边形），数值验证场地内任意点到最近覆盖点的最大距离约为 969
+m（式 (4)），严格小于最坏接收半径 1000
+m，故覆盖网在最坏情况下仍能保证每只源至少被听见一次。10000
+局中未出现”因覆盖网漏听而漏源”的情形。</p>
+<p><strong>（2）策略对照检验。</strong> 与”先 7
+点普查再清”的静态对照相比，本策略在清完率基本持平（99.90% vs
+99.72%）的前提下，平均总时间缩短 1714
+s；与未加固的早期动态相比，清完率提升 1.16 个百分点、时间再缩短 542
+s，说明每频道独立可行域、探点与收尾兜底等机制带来了真实的收益。</p>
+<p><strong>（3）鲁棒性检验。</strong> 10000 局中 10 个未清完的局均只剩 1
+个源，且都走齐了 7 个覆盖点、撞到 160 步上限；这 10 局里 9
+局在未加固的早期动态上同样清不掉，说明失败发生在”听见之后锁不住”的定位环节，而非
+7 点覆盖网漏听。最坏单局时间 6864
+s，无失控长尾，表明策略在随机世界下表现稳定。</p>
+<p><strong>（4）与问题一、二、四的衔接。</strong> 问题一的示向度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math>
+楔形
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math>
+半平面交
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math>
+多边形直径/最小外接圆，是本问定位区域的几何基础；本问直接复用问题一修正版几何（半平面交求凸多边形、Welzl
+求最小外接圆），并以
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">E</mi><mi mathvariant="normal">C</mi></mrow></msub><mo>≤</mo><mn>20</mn></mrow><annotation encoding="application/x-tex">R_{\mathrm{MEC}}\le 20</annotation></semantics></math>
+作为”能否清”的判据，不把问题一的”直径圆能否盖住定位区域”当清除准则。问题二的”保证再听见范围
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mrow><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">v</mi></mrow></msub><annotation encoding="application/x-tex">C_{\mathrm{recv}}</annotation></semantics></math>“是本问补测点的概念依据，但实现上沿示向取约
+1200 m 加偏角候选，不套用问题二的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math>
+最优点（两站交会直径最坏约 111 m，远大于 20
+m，清不掉）。问题四的定向源存在观测盲区，本问只处理全向源。</p>
+<hr />
+<h2 id="六模型评价">六、模型评价</h2>
+<p><strong>优点：</strong></p>
+<ol type="1">
+<li><strong>边听边清、覆盖插入</strong>：把覆盖义务插到追击路径中，避免”先扫完再清”的冗余走路，平均总时间较静态对照缩短
+31%；</li>
+<li><strong>每频道独立可行域</strong>：用集员估计刻画定位不确定性，且否定信息频道间不交叉污染，从机制上避免了”剩
+1 个源找不到”的失败模式；</li>
+<li><strong>稳定性好</strong>：圆心探点、6 m 精细归航、3000 m
+兜底预算三重收尾机制，把最坏单局时间从 11 万秒级压到 6864
+s，无失控长尾；</li>
+<li><strong>可解释、可对接</strong>：策略只依赖几何集合运算与开路哈密顿路，决策逻辑清晰，可直接把决策函数对接到官方模拟器
+HTTP 接口。</li>
+</ol>
+<p><strong>缺点：</strong></p>
+<ol type="1">
+<li>覆盖网按最坏接收半径 1000 m
+设计，对接收半径较大的源偏保守，存在进一步压缩覆盖走路的空间；</li>
+<li>每停一次重规划的开路哈密顿路在小规模任务上精确、在任务较多时退化为
+2-opt 启发式，极端情况下排路质量有损失；</li>
+<li>仍有 0.10% 的局（10/10000）未清完，且都撞到 160
+步上限，属于未能完全消除的边角情况。</li>
+</ol>
+<p><strong>改进方向：</strong> 一是利用 <code>no_signal</code>
+结果进一步约束已听见源的可行域（当前主要依赖示向度交会）；二是为剩余未清局设计更强的兜底搜索（如沿可行域长轴定向扫掠）。</p>
+<p><strong>推广：</strong>
+本模型可推广到一般”不确定环境下的搜索—定位—处置”问题，如多无人机电磁频谱搜索、灾区多目标搜救、水面污染物溯源等，其中”覆盖义务
++ 定位收敛 + 处置”的三阶段拆解与”每步重规划”的框架具有通用性。</p>
+<hr />
+<h2 id="参考文献">参考文献</h2>
+<p>[1] TORRIERI D J. Statistical theory of passive location systems[J].
+IEEE Transactions on Aerospace and Electronic Systems, 1984, AES-20(2):
+183-198.</p>
+<p>[2] MILANESE M, VICINO A. Optimal estimation theory for dynamic
+systems with set membership uncertainty: an overview[J]. Automatica,
+1991, 27(6): 997-1009.</p>
+<p>[3] BEZDEK K. Über einige Kreisüberdeckungen[J]. Beiträge zur Algebra
+und Geometrie, 1983, 14: 7-13.</p>
+<p>[4] HELD M, KARP R M. A dynamic programming approach to sequencing
+problems[J]. Journal of the Society for Industrial and Applied
+Mathematics, 1962, 10(1): 196-210.</p>
+<p>[5] ARKIN E M, HASSIN R. Approximation algorithms for the geometric
+covering salesman problem[J]. Discrete Applied Mathematics, 1994, 55(3):
+197-218.</p>
+</body>
+</html>

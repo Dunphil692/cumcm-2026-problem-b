@@ -1,0 +1,8317 @@
+[
+  [
+    {
+      "y": 72.00001525878906,
+      "x": 72.0,
+      "size": 20.0,
+      "text": "基于交会定位、保证接收域选点与集员在线决策的无",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 100.00001525878906,
+      "x": 72.0,
+      "size": 20.0,
+      "text": "线电干扰源自动定位与清除模型",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 135.60000610351562,
+      "x": 72.0,
+      "size": 16.0,
+      "text": "摘要",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 167.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "本文针对 2026 年高教社杯全国大学生数学建模竞赛 B 题，围绕”交会定位—检测点选取",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 184.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "—在线搜索清除”三个层次建立数学模型，核心结论均经确定性计算或模拟器测试验证。",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 205.98524475097656,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "针对问题一（定位区域直径与覆盖判定），本文把 ±1∘ 示向度误差转化为角形区域，用",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 224.45144653320312,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "叉积判向等价为两条半平面，把定位区域统一为 2n 条半平面的交（凸集）；显式区分空",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 241.45143127441406,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "/有界/无界三态，用旋转卡壳求直径 D、Welzl 算法求最小包围圆 RMEC，并证明：存在",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 258.4514465332031,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "直径为10−15， D2000 的圆覆盖定位区域，当且仅当组随机交叉验证一致，仿真真实源包含率 RMEC = D/2。 100%7 种已知形状验证误差约。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 301.4514465332031,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "针对问题二（第二检测点选择），本文由”第一检测点已收到信号 ⇒ 接收半径不小于源",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 318.4514465332031,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "距优：三构型最优直径”推导保证接收域 C 111.0 / 41.0 / 8.2 mrecv（d2 ≤max(1000,，最优第二检测点贴保证接收域外沿以拉大基 d1)），以最坏定位直径 J为目标确定性寻",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 351.5122985839844,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "线、偏角约 32∘∼41∘；以 J ≤1.25Jmin 水平集给出候选区域，两套独立实现互证差不",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 372.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "超过 0.006 m。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 398.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "针对问题三（全向源在线搜索清除），本文提出”每频道一张可行区域 + 覆盖与清除混排",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 415.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "+ 每停重规划”在线策略：no_signal 只挖本频道、direction 交楔形，三类任务（能",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Courier",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Courier",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 432.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "清、补测、听洞）按总路程统一调度，停机用”可行域与覆盖任务清空”判定。7 点覆盖网",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 449.1999816894531,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "最坏点距 989 m < 1000 m，保证每源至少被听见一次。官方三次测试清除 16、13、12",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 466.1999816894531,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "个源，单源耗时 220.28 / 258.65 / 250.17 s。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 492.1999816894531,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "针对问题四（全向/定向混合源搜索清除），本文针对”无信号不等于无源”，建立位置×朝",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 509.1999816894531,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "向联合网格集员表示，构造外环 1825 m 包裹 1800 m 场地的 N19 超凸包普查站网，配",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 526.2000122070312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "合逆时针顺流、1300 m 扇区延迟收割与奔袭静默免听。官方三次测试单源耗时 575.21 /",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 543.2000122070312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "579.18 / 577.59 s（波幅 0.69%）；本地 1 万局满清率 99.80%、总清除率 99.98%、全",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 560.2000122070312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "向源 100.00%，平均单源 521.15 s/源。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 586.2000122070312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "关键词：交会定位；半平面交；最小包围圆；保证接收域；集员估计；覆盖路径规划；零",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 603.2000122070312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "漏检证书；在线决策",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 71.5999984741211,
+      "x": 72.0,
+      "size": 16.0,
+      "text": "1 问题重述",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 102.39999389648438,
+      "x": 72.0,
+      "size": 14.0,
+      "text": "1.1 问题背景",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 131.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "无线电干扰源的定位与清除分为初步监测、区域性排查与精准定位三个阶段：前两阶段用",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 148.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "固定站、移动监测车或无人机确定干扰源分布区域，最终的精确定位与清除则需技术人员",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 165.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "携带便携式测向机在区域内徒步排查。为在危险环境中替代人工，某公司拟研制搭载于机",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 182.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "器狗的干扰源自动定位清除系统。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 205.45144653320312,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "目标区域是以原点为圆心、半径 1800￼m 的圆形区域（正东为 x轴、正北为 y轴，单位",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 225.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "米），其中干扰源个数未知，占用互不相同的频道（1–20）；按覆盖角度分为全向源",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 238.51229858398438,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "（360∘）与定向源（定向方向两侧各 90∘），有效接收半径在 1000 ∼1500￼m 之间。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 256.4514465332031,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "测向机测得的示向度为从[ −1∘, 1∘] 误差。机器狗移动速度 x轴正向逆时针旋转到 5￼m/s、切换频道”检测点指向干扰源 1￼s、停测 5￼s、光学定位”方向的角度，含 3￼s、激",
+      "fonts": [
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 290.4514465332031,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "光清除 2￼s；距源 ≤20￼m 方可清除，≤5￼m 且位于覆盖角内时无法获得示向度。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 319.3999938964844,
+      "x": 72.0,
+      "size": 14.0,
+      "text": "1.2 需要解决的问题",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 343.20001220703125,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "•问题一：已知若干检测点坐标及某干扰源关于这些检测点的示向度，给出用交会定",
+      "fonts": [
+        "Symbol",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 360.20001220703125,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "位法计算多边形定位区域直径（区域内任意两点距离的最大值）的算法，并判断以",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 377.20001220703125,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "该直径为直径的圆能否覆盖此区域。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 396.0,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "•问题二：已知某全向干扰源在一个检测点处的示向度，给出第二个检测点的选择策",
+      "fonts": [
+        "Symbol",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 413.0,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "略与候选区域。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 431.79998779296875,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "•问题三：区域内干扰源均为全向源、总数 10–16 但未知，机器狗从原点出发、初",
+      "fonts": [
+        "Symbol",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 448.8000183105469,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "始频道 1，在确保全部清除的前提下使任务时间最短；制定搜索定位清除策略与算",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 465.8000183105469,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "法，并经模拟器演练与三次正式测试检验。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 484.6000061035156,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "•问题四：区域内兼有全向与定向干扰源，定向源个数与朝向未知，其余同问题三；",
+      "fonts": [
+        "Symbol",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 501.6000061035156,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "给出检测与清除策略及算法并检验。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 526.0,
+      "x": 72.0,
+      "size": 16.0,
+      "text": "2 问题分析",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 556.7999877929688,
+      "x": 72.0,
+      "size": 14.0,
+      "text": "2.1 问题一的分析",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 585.6000366210938,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "交会定位法的本质是方位线交会：每站测得的示向度确定一条方向线，干扰源必在其上；",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 598.3851928710938,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "±1∘ 误差使方向线变为张角 2∘ 的角形区域，多站角形区域取交即为定位区域。因此问题",
+      "fonts": [
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 616.8514404296875,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "一本质是二维半平面交问题，可分解为”区域构造 → 直径计算 → 覆盖判定”。关键点有",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 72.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "四：(1) 角形区域可精确等价为两条半平面之交，故定位区域必为凸集；(2) 观测可能自相",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 89.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "矛盾（区域空）或不足（区域无界），须显式区分空/有界/无界三态；(3) 凸多边形直径",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 103.451416015625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "必在顶点对取得，可用旋转卡壳 O(m) 求出；(4) 覆盖判定是存在性问题，可用最小包围",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 123.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "圆给出严格判据。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 149.39999389648438,
+      "x": 72.0,
+      "size": 14.0,
+      "text": "2.2 问题二的分析",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 175.45144653320312,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "问题二实质是三约束下的最坏情形最小化：一是”听得见”，S2 须对源可能域内每个可能的",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 195.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "源都保证收到信号；二是”交会角不能太小”，两次示向近平行会把区域拉成细长条、直径",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 209.45144653320312,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "巨大；三是（可选）留在目标区域内。由 S1 已收到信号知 R ≥d1，故对远源可放宽到",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 229.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "1500 m、对近源须保持 1000 m 内——“一律按 1000 m”过保守、“一律按 1500 m”是假保",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 246.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "证；此外定位区域必须裁剪回源可能域与接收上界，否则直径严重虚高；而严格最优只有",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 263.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "离散点，故候选区域须用近最优水平集。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 289.3999938964844,
+      "x": 72.0,
+      "size": 14.0,
+      "text": "2.3 问题三的分析",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 318.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "问题三核心是不确定环境下的”搜索—定位—处置”在线决策，可拆为相互耦合的三环节：",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 332.4514465332031,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "听见（该频道至少响过一次）、锁住（最小外接圆半径证盘再激光）。难点有二：一是测向只有角度无距离、多频道否定信息共用可行域易交叉 RMEC ≤20 m）、清掉（走进保",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 369.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "误删，故须每频道独立可行域的集员估计；二是覆盖、定位、清除分布在不同空间位置，",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 386.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "须统一调度而非分为先后阶段，故把覆盖义务插入追击路径、每停一次用开路哈密顿路重",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 403.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "排下一站；停机不能用剩余源数判定（接口不返回），须用”可行域与覆盖任务清空”规",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 420.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "则。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 446.3999938964844,
+      "x": 72.0,
+      "size": 14.0,
+      "text": "2.4 问题四的分析",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 475.1999816894531,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "问题四引入定向源，新增两个难点：一是正负观测信息不对称——正观测（direction）对",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 492.1999816894531,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "两类源都给位置楔形约束；负观测（no_signal）在全向假设下给出”距源超接收半径”的圆",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 509.1999816894531,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "盘挖除证书，在定向假设下几乎无位置信息（出扇同样产生 no_signal）。二是盲区致命",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 526.2000122070312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "——问题三的 7 点网全在圆内，贴边朝外的定向源其可听半平面完全落在圈外。故关键",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 543.2000122070312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "设计为：位置×朝向联合网格集员表示（no_signal 按朝向衰减、绝不挖盘）、N19 超凸",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Courier",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 560.2000122070312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "包普查站网（外环 1825 m 包裹场地）、逆时针单向顺流 + 1300 m 扇区延迟收割、奔袭",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 577.2000122070312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "转场静默免听。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 72.39999389648438,
+      "x": 72.0,
+      "size": 14.0,
+      "text": "2.5 四个问题之间的联系",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 98.451416015625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "四问构成一条技术链：问题一给出”观测 → 区域 → 直径 → 覆盖判定”的严格几何算法，",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 118.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "是全部几何计算的基础模块；问题二给出保证接收域与最坏交会直径的选点方法，为多点",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 132.451416015625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "序列定位提供粗定位依据（细的在线流程）；问题三、四把几何定位嵌入Jmin ≈111 m 远大于清除半径”搜索—定位— 20 m清除，故粗定位须交给更精”的在线决策闭环，其中",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 169.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "问题四叠加定向源的类型推断与零漏检证书。问题三、四的补测点复用问题二的保证接收",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 186.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "域，问题四的可行域求交复用问题一的半平面交与最小外接圆算法。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 211.60000610351562,
+      "x": 72.0,
+      "size": 16.0,
+      "text": "3 模型假设",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 238.20001220703125,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "1. 同平面、源静止：忽略测向机与干扰源的高度差异，二者位于同一平面内；任务期",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 255.20001220703125,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "间各源位置、类型、朝向、接收半径、频道均不变。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 270.3122863769531,
+      "x": 90.0,
+      "size": 14.662130355834961,
+      "text": "2. 误差有界：示向度与真实方位角之差落在 [ −1∘, 1∘] 内；同一检测点同一频道重",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 291.0,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "复测量的误差保持不变（按站缓存）。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 309.79998779296875,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "3. 无漏报：源在有效接收半径内且处于覆盖角内时必返回 direction 或 near，故一",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Courier",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Courier",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 326.79998779296875,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "次 no_signal 可作为否定证据（问题四中该证据仅对全向假设成立，对定向假设",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Courier",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 343.79998779296875,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "不提供位置信息）。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 362.6000061035156,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "4. 坐标精确：检测点坐标已知且精确，误差只来源于示向度。",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 381.3999938964844,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "5. 时间可加、转弯可忽略：总时间由移动、停测、切换、清除时间线性叠加。",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 400.20001220703125,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "6. 确定性传播：无遮挡、无随机漏检、无间歇发射，no_signal 当且仅当”无未清源",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Courier",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 417.20001220703125,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "/ 超出接收半径 / 定向未覆盖”。",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 436.0,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "7. 保守性（问题三、四）：凡无法连续证明的区域一律保留在可行域内，宁可多测一",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 453.0,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "次也不缩小可行域。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 471.8000183105469,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "8. 评价口径（问题二）：采用所有相容情形下的最坏值。",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 496.2000427246094,
+      "x": 72.0,
+      "size": 16.0,
+      "text": "4 符号说明",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 76.94998168945312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "符号意义",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 100.95529174804688,
+      "x": 144.99180603027344,
+      "size": 12.0,
+      "text": "Si = (xi, yi)第 i个检测点坐标（m）",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 126.95529174804688,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "θi / θ示向度观测（）∘",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular"
+      ]
+    },
+    {
+      "y": 151.95529174804688,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "G / g真实干扰源 / 源可能位置",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 177.95529174804688,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "Δ / ε示向度误差上界（）1∘",
+      "fonts": [
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular"
+      ]
+    },
+    {
+      "y": 203.95526123046875,
+      "x": 134.27420043945312,
+      "size": 12.0,
+      "text": "Wi = W(S, θ, ε)楔形（角形区域）",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 229.95526123046875,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "P / / Vm定位区域 / 顶点集 / 顶点数",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 254.95526123046875,
+      "x": 166.66799926757812,
+      "size": 12.0,
+      "text": "D定位区域直径（m）",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 280.95526123046875,
+      "x": 157.75439453125,
+      "size": 12.0,
+      "text": "RMEC最小外接圆半径（m）",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 306.95526123046875,
+      "x": 167.33399963378906,
+      "size": 12.0,
+      "text": "R有效接收半径（1000–1500 m）",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 332.95526123046875,
+      "x": 156.9174041748047,
+      "size": 12.0,
+      "text": "Rarena目标区域半径（1800 m）",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 357.95526123046875,
+      "x": 164.406005859375,
+      "size": 12.0,
+      "text": "Ω1问题二源可能域",
+      "fonts": [
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 383.95526123046875,
+      "x": 159.11480712890625,
+      "size": 12.0,
+      "text": "Crecv问题二保证接收域",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 409.95526123046875,
+      "x": 159.71780395507812,
+      "size": 12.0,
+      "text": "L(g)保证接收半径 max(1000, ∥g −S1 ∥)",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular"
+      ]
+    },
+    {
+      "y": 428.57501220703125,
+      "x": 274.0,
+      "size": 12.0,
+      "text": "（m）",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 452.95526123046875,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "J(q) / Jmin最坏定位直径 / 其最小值（m）",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 477.95526123046875,
+      "x": 164.6446075439453,
+      "size": 12.0,
+      "text": "Ωk频道 k的集员可行域",
+      "fonts": [
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 503.9552307128906,
+      "x": 155.3188018798828,
+      "size": 12.0,
+      "text": "B(c, r)以 c为心、r 为半径的圆盘",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 529.9552612304688,
+      "x": 167.66400146484375,
+      "size": 12.0,
+      "text": "T任务总时间（s）",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 555.9552612304688,
+      "x": 168.33599853515625,
+      "size": 12.0,
+      "text": "v移动速度（5 m/s）",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 580.9552612304688,
+      "x": 127.8905029296875,
+      "size": 12.0,
+      "text": "tmove, tmeas, tsw, tclr移动 / 停测 / 切换 / 清除时间（s）",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 606.9552612304688,
+      "x": 162.90150451660156,
+      "size": 12.0,
+      "text": "dcle光学清除半径（20 m）",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 76.94998168945312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "符号意义",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 100.95529174804688,
+      "x": 167.26800537109375,
+      "size": 12.0,
+      "text": "φ定向源朝向（）∘",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular"
+      ]
+    },
+    {
+      "y": 126.95529174804688,
+      "x": 160.9199981689453,
+      "size": 12.0,
+      "text": "𝒩19问题四 N19 普查站网（19 站）",
+      "fonts": [
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 160.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "其余符号在首次出现处说明。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 185.60000610351562,
+      "x": 72.0,
+      "size": 16.0,
+      "text": "5 数据处理与说明",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 217.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "本题各问均不涉及外部公开数据集。问题一、二的数据为自建的确定性几何算例与随机仿",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 234.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "真（真实源、检测点、示向度误差均按题面规则生成）；问题三的数据来自官方无线电干",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 251.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "扰源环境模拟器的演练测试与三次正式测试（案例编码与日志见附录）；问题四的数据来",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 268.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "自按官方附件规则逐项一致实现的本地模拟器（与正式接口费率一致，不使用模拟器真",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 285.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "值）。本地仿真使用固定随机种子族保证可复现，实验结果与调参/确认集通过种子流与",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 302.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "世界签名双重排重，避免数据泄漏。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 327.6000061035156,
+      "x": 72.0,
+      "size": 16.0,
+      "text": "6 模型的建立与求解",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 358.3999938964844,
+      "x": 72.0,
+      "size": 14.0,
+      "text": "6.1 问题一：交会定位区域直径算法与覆盖判定",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 382.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.1.1 示向度误差与角形区域模型",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 405.4514465332031,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "设干扰源真实位置为 G，检测点 Si = (xi, yi)，从 Si 指向 G 的真实方位角为",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 426.2437744140625,
+      "x": 169.46929931640625,
+      "size": 14.662130355834961,
+      "text": "β(Si, G) = atan2(Gy −yi, ￼Gx −xi)￼￼mod￼￼360∘",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXSizeTwoSym-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXSizeTwoSym-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular"
+      ]
+    },
+    {
+      "y": 466.5639953613281,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "测向机测得示向度θ张角为i −Δ ≤ Δ 的角形区域（楔形，图β(Si, G ) ≤θi =θ βi + Δ(Si, G。满足此式的一切点构成以) + 1）： εi，其中 |εi| ≤Δ = 1 Si ∘为顶点、中轴方向为。故真实方位角满足 θi、半",
+      "fonts": [
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXVariants-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXVariants-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 519.4949340820312,
+      "x": 191.27369689941406,
+      "size": 14.662130355834961,
+      "text": "Wi = {￼P:￼β(Si, P) ∈[θi −Δ, ￼θi + Δ]￼}",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXSizeOneSym-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXSizeOneSym-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 233.28179931640625,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "图 1　干扰源 G 关于检测点 S 的示向度示意图",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 460.1042175292969,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "图 2　交会定位法示意图",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 483.1042175292969,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.1.2 角形区域到半平面的等价转化",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 506.3557434082031,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "引理 1（叉积判向） 设 u(α) = (cosα, sinα)，则 P相对 Si 的方位角 ≥α（位于方向",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Bold",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 523.355712890625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "α 的逆时针一侧）当且仅当",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 540.355712890625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "cross(u(α), ￼P −Si) = cosα(Py −yi) −sinα(Px −xi) ≥0。",
+      "fonts": [
+        "STIXGeneral-Regular",
+        "STIXGeneral-Bold",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 566.9168090820312,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "由引理 1，角形区域可精确等价（非近似）为两条半平面之交 Wi = Hi(1)∩Hi(2)：令",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 587.0193481445312,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "αi = θi −Δ、γi = θi + Δ，两半平面的内法向量分别为 ( −sinαi, ￼cosαi) 与",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 69.451416015625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "(sinγi, ￼−cosγi)，均以 ax + by + c ≥0 为可行方向。于是 n个检测点给出 2n 条半",
+      "fonts": [
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 89.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "平面，定位区域为",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 105.66183471679688,
+      "x": 142.60049438476562,
+      "size": 14.662130355834961,
+      "text": "P =⋂i=1nWi = {￼P:￼ajx + bjy + cj ≥0, ￼j = 1, 2, …, 2n￼}",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXSizeOneSym-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXSizeTwoSym-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "STIXSizeTwoSym-Regular"
+      ]
+    },
+    {
+      "y": 160.9427490234375,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "两个检测点 S1, S2 交会定位的几何示意如图 2 所示。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 189.6912841796875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "性质 1（凸性） 有限个半平面的交必为凸集；非空时为（可能有界、无界的）凸多边",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 206.6912841796875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "形。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 232.6912841796875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.1.3 半平面交与状态判定",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 258.6912841796875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "算法采用边界线交点枚举 + 凸包 + 衰退锥判定，对”空 / 有界 / 无界”三态均给出正确结果，",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 275.6912841796875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "且不引入人为截断：",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 298.9427185058594,
+      "x": 90.0,
+      "size": 14.662130355834961,
+      "text": "1. 顶点枚举：对每对边界直线满足全部约束（容差 ε = 10 ℓ−9j, ℓ）的候选顶点集k，若 detjk = a Qjb；有界非退化时k −akbj ≠0 则求交点，筛选",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 334.6831359863281,
+      "x": 108.0,
+      "size": 14.662130355834961,
+      "text": "P = conv(Q)。",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 353.4831237792969,
+      "x": 90.0,
+      "size": 14.662130355834961,
+      "text": "2. 有界性判定（衰退锥判据）：定义衰退锥 𝒞= {d:nj ⋅d ≥0}（nj 为内法向",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Bold",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Bold",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Bold",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "STIXGeneral-Bold",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 372.2235412597656,
+      "x": 108.0,
+      "size": 14.662130355834961,
+      "text": "量），G错误。max，则P 有界当且仅当 P有界 ⇔G 𝒞= {0}max < 180；将内法向量幅角升序排列，记最大循环间隔∘。该判据避免了”用固定方框截断真实区域” 的",
+      "fonts": [
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 429.97210693359375,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.1.4 直径计算（旋转卡壳）",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 453.2235107421875,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "凸多边形直径定义为 D = maxp<q ∥vp −vq ∥2。引理 3：凸紧集上距离最远的两点可",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 471.9848327636719,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "分别取为顶点，故只需枚举顶点对。利用”对踵点对”的单调性，旋转卡壳算法在 O(m) 时",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 491.7333068847656,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "间内求出直径。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 517.7333374023438,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.1.5 最小包围圆（Welzl 随机增量算法）",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 540.98486328125,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "最小包围圆 (c*, RMEC) = arg￼mincmaxv ∥v −c ∥2 由 V中 2 或 3 个点唯一确定",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Bold",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Bold",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Bold",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 559.589111328125,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "（两点为直径、三点为外接圆）。Welzl 算法随机打乱顶点、增量维护支撑集 B",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic"
+      ]
+    },
+    {
+      "y": 576.5524291992188,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "（|B| ≤3），期望时间 O(m)。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "STIXVariants-Regular",
+        "STIXGeneral-Italic",
+        "STIXVariants-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 72.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.1.6 覆盖判定：核心定理",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 95.451416015625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "定理 4（覆盖判定定理） 存在直径为 D 的圆覆盖定位区域 P，当且仅当",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 112.451416015625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "RMEC = D/2。",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 138.451416015625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "证明：充分性——取最小包围圆圆心 c*、半径 D/2 即得覆盖圆；必要性——若存在半",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Bold",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 155.451416015625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "径P内）。 的圆半径必D/2∎ 的圆覆盖 ≥ PD，则/2，故 RMEC RMEC ≤ ≥D/2D；又因/2。两式合并即得 P含一对相距 RMEC D 的直径端点，任何覆盖 = D/2（数值容差",
+      "fonts": [
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "AppleSymbols",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 219.201904296875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.1.7 算例求解结果",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 245.201904296875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "取七种典型构型（东西/南北对望、直角、同侧、120° 环绕、共线环绕、东/北/西），示",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 257.9871520996094,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "向度取指向原点方向、误差覆盖；直角交会区域极小（ D±1 ≈49.39∘。结果：正对交会区域为细长菱形， m）且能覆盖，可见交会角接近RMEC 90 =∘ 时定位最精 D/2，能",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 293.45343017578125,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "确；多站环绕区域为六边形，返回”无界”。RMEC > D/2，不能覆盖；同侧构型交集无界，算法正确",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 448.0577087402344,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "图 3　交会定位算例：定位区域、直径、最小包围圆与直径圆",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 473.2577209472656,
+      "x": 72.0,
+      "size": 14.0,
+      "text": "6.2 问题二：第二检测点选择策略与候选区域",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 494.30914306640625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "6.2.1 源可能域 Ω1",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular"
+      ]
+    },
+    {
+      "y": 519.3699951171875,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "第一次观测给出示向度，源必位于沿示向线、张角 2∘ 的楔形内；S1 收到信号要求",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 537.3091430664062,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "5 < d1 ≤R ≤1500；源又在目标圆内。故",
+      "fonts": [
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 555.5101928710938,
+      "x": 72.00000762939453,
+      "size": 14.371536254882812,
+      "text": "Ω1 = {￼g:￼∥g ∥≤1800,  5 < ∥g −S1 ∥≤1500,  |wrap(∠(g −S1) −θ1)| ≤1∘￼}",
+      "fonts": [
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXSizeOneSym-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXVariants-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXVariants-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXSizeOneSym-Regular"
+      ]
+    },
+    {
+      "y": 589.9861450195312,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "注意目标圆以原点为心、不以 S1 为心，楔形内各方向被目标圆截断的距离不同，须逐方",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 606.9861450195312,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "向计算远端距离 rfar(φ) = min(1500, ￼该方向穿出目标圆的距离)。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 69.451416015625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "6.2.2 保证接收域 Crecv",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular"
+      ]
+    },
+    {
+      "y": 95.451416015625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "S2 的”听得见”必须对 Ω1 内每个可能的源都成立。由 S1 已收到信号知 R ≥d1 且",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 112.451416015625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "R由此定义 ≤1500，要使 S2 对一切相容的 R都能收到 g，必须且只需 d2 ≤max(1000, d1)。",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 147.08444213867188,
+      "x": 72.0,
+      "size": 13.417969703674316,
+      "text": "Crecv = {￼q:￼F(q) = gsup∈Ω1( ∥q −g ∥−L(g)) ≤0￼},   L(g) = max(1000, ∥g −S1 ∥)",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXSizeFourSym-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXSizeOneSym-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXSizeOneSym-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXSizeFourSym-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular"
+      ]
+    },
+    {
+      "y": 204.2454376220703,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "几何上 Crecv 近似”三圆叶子” B(S1, 1000) ∩B(P−, 1000) ∩B(P+, 1000)（P± 为 ±1∘",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 222.72402954101562,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "方向上 1000 m 远弧两端），该三圆交是 Crecv 的保守充分条件。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 248.72401428222656,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "6.2.3 最坏定位区域直径 J（含后验裁剪）",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 277.47259521484375,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "第二次观测后定位区域为",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 299.0941467285156,
+      "x": 167.04710388183594,
+      "size": 14.662130355834961,
+      "text": "Ω2 = W1 ∩W2 ∩Ω1 ∩{5 < ∥z −q ∥≤1500},",
+      "fonts": [
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular"
+      ]
+    },
+    {
+      "y": 324.6797180175781,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "其中裁剪回的位置。目标取所有可能源、所有相容第二次误差下的最坏值： Ω1 排除了 d1 > 1500 m 的不可能位置、裁剪 d2 ≤1500 排除了 S2 收不到",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 362.5746154785156,
+      "x": 186.8697967529297,
+      "size": 14.662130355834961,
+      "text": "J(q) = gsup∈Ω1￼e2∈[−1sup∘,1∘]￼diam(Ω2(q, g, e2))",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXSizeOneSym-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXSizeOneSym-Regular"
+      ]
+    },
+    {
+      "y": 406.1872253417969,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "后验裁剪的必要性：若不裁剪，中心构型有三个离 S1 达 1551–1623 m（物理不可能），未裁剪直径被虚高至 S2 = (800, 600) 处最坏情形的后验四顶点中 134.98 m；裁剪后",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 442.935791015625,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "退化为真源附近的单点，最坏直径降至 112.1 m。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 468.9358215332031,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.2.4 求解与结果",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 492.187255859375,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "J 取有限源网格 × 有限误差网格上的最大值（确定性网格离散，逐位可复现），在保证接",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 511.9358215332031,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "收域内做 25 m → 5 m → 1 m → 0.5 m 多级细化寻优。三构型结果如下：",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "LucidaGrande",
+        "Helvetica",
+        "LucidaGrande",
+        "Helvetica",
+        "LucidaGrande",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 537.9358520507812,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "表 1　问题二三构型求解结果",
+      "fonts": [
+        "PingFangSC-Semibold",
+        "Helvetica-Bold",
+        "PingFangSC-Semibold"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 74.95529174804688,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "构型Jmin/m最优 S2离 S1/偏角1.25 候选区",
+      "fonts": [
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 99.75526428222656,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "中心 (0, 0), 0∘111.0(844, ± 544)1004 m / 855–1004",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 118.50017547607422,
+      "x": 313.6000061035156,
+      "size": 12.0,
+      "text": "32.8°m / 16.1°–",
+      "fonts": [
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 132.5001678466797,
+      "x": 392.79998779296875,
+      "size": 12.0,
+      "text": "60.1°",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 153.57498168945312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "向外 800 41.0( −1594.8, ± 511.4)784 m / 593–1000",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 168.95529174804688,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "( −1000, 0)180∘, 40.7°m / 24.4°–60.8°",
+      "fonts": [
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 206.57501220703125,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "切向 8.2(1688.4, + 120.5)158 m / 125–236 m /",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 221.18666076660156,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "(1790, 0) , 90∘40.1°31.0°–60.3°",
+      "fonts": [
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 235.20001220703125,
+      "x": 392.79998779296875,
+      "size": 12.0,
+      "text": "（西侧一",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 252.20001220703125,
+      "x": 392.79998779296875,
+      "size": 12.0,
+      "text": "瓣）",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 280.2622985839844,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "三个构型的几何含义一致：最优 S2 均”贴保证接收域外沿、偏角 32.8∘∼40.7∘“，在基线",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 300.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "长度与交会角之间取得折中。最坏情形见证（三构型一致）：最坏直径出现在楔形远弧端",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 313.7352600097656,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "点（φ = ± 1∘、d1 = rfar）× 第二次误差极值（e2 = ± 1∘）处。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 385.59130859375,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "图 4　中心构型候选区域（彩色为可行域最坏直径，等值线为 1.1/1.25/1.5×J_min，★为",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 402.59130859375,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "最优点）",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 616.85107421875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "图 5　向外 800 m（左）与切向边界（右）构型候选区域",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 72.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.2.5 候选区域：近最优水平集",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 98.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "严格最优只有离散的点，单点交不了”候选区域”这道题，故把”较好”放宽为近最优水平集",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 113.44329833984375,
+      "x": 201.59620666503906,
+      "size": 14.662130355834961,
+      "text": "ℛα = {￼S2 ∈Crecv:￼J(S2) ≤αJmin￼}",
+      "fonts": [
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXSizeOneSym-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXSizeOneSym-Regular"
+      ]
+    },
+    {
+      "y": 148.48583984375,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "α = 1.25 允许最坏直径比最优差 25%（中心构型 111 → 139 m），属建模容差而非题",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "LucidaGrande",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 165.48583984375,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "面常数。敏感性分析表明 α ∈[1.1, 1.5] 时候选区域始终是贴外沿的两瓣，只改变向内",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 182.48583984375,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "伸入深度，策略结论不依赖 α的精确取值。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 211.43441772460938,
+      "x": 72.0,
+      "size": 14.0,
+      "text": "6.3 问题三：全向干扰源在线搜索清除策略",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 235.23440551757812,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.3.1 覆盖网：最坏 1000 m 的等圆覆盖",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 258.48583984375,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "单次任务总时间间的 77%，故缩短总时间的关键是缩短移动路程。 T = tmove + tmeas + tsw + tclr，其中 tmove = L/v。移动时间约占总时",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 304.2344055175781,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "为保证场地上任意位置的源都至少被听见一次，覆盖点须满足”场地内任意点到最近覆盖",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 318.48583984375,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "点的距离 ≤1000 m”，即等圆覆盖圆盘问题。对 n = 6 个等圆，最小覆盖半径",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 335.48583984375,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "0.5559 × 1800 ≈1000.6 m 略超 1000 m，盖不住；对 n = 7，最小覆盖半径 900 m",
+      "fonts": [
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 352.48583984375,
+      "x": 76.07281494140625,
+      "size": 14.662130355834961,
+      "text": "< 1000 m，盖得住。故 7 点覆盖网是最小完备配置。最终取原点 + 半径 1150 m 正六",
+      "fonts": [
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 372.2344055175781,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "边形共 7 点（把外圈半径外扩到 1150 m 使覆盖点更贴近均匀分布的外圈源、减少追击往",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 389.2344055175781,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "返），此时最坏覆盖距离",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 410.1919860839844,
+      "x": 103.6229019165039,
+      "size": 14.662130355834961,
+      "text": "dmax =11502 + 18002 −2 ⋅1150 ⋅1800cos30∘≈989￼m < 1000￼m",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular"
+      ]
+    },
+    {
+      "y": 441.3065185546875,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "7 点网保证最坏 R = 1000 m 时每只源至少被听见一次；注意这只保证”听见”、不保证”",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 461.0550842285156,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "清除”。否定证据取 990 m（而非 1000 m），为 10 m 格点半对角误差留出工程余量，保",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 478.0550842285156,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "证 no_signal 挖洞必不误删真实源。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Courier",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 305.5804138183594,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "图 6　七点覆盖网（原点 + 半径 1150 m 正六边形，听圈半径 1000 m）",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 328.5804138183594,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.3.2 每频道一张可行区域（集员估计）",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 350.6629943847656,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "对频道得到一次测量按以下规则收缩： k维护一张可行区域 Ωk（集合而非概率分布），初始 Ω(0)k = B(O, Rarena)。每",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 397.06744384765625,
+      "x": 90.0,
+      "size": 14.662130355834961,
+      "text": "•no_signal：源距 S超过其接收半径（≥1000 m，工程取 990 m），只从本频",
+      "fonts": [
+        "Symbol",
+        "Courier",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 414.06744384765625,
+      "x": 108.0,
+      "size": 14.662130355834961,
+      "text": "道挖掉 B(S, 990)；",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 431.4011535644531,
+      "x": 90.0,
+      "size": 14.662130355834961,
+      "text": "•directionΩk ←Ωk ∩（示向度W(S, θ, 1 θ）：源落在∘) ∩B(S, 1500) θ ± 1；∘ 楔形内且距 S不超过 1500 m，",
+      "fonts": [
+        "Symbol",
+        "Courier",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 471.4158935546875,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "•near 或清除成功：该频道结案。",
+      "fonts": [
+        "Symbol",
+        "Courier",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 497.4158935546875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "楔形为两条边界射线的两个半平面之交：",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 519.0375366210938,
+      "x": 112.41719818115234,
+      "size": 14.662130355834961,
+      "text": "W(S, θ, ε) = {P:￼u(θ −ε) × (P −S) ≥0,  u(θ + ε) × (P −S) ≤0}",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular"
+      ]
+    },
+    {
+      "y": 547.078125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "关键一点：no_signal 挖洞只挖本频道自己的可行域，不能把别的未听频道一并挖掉，",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Courier",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 564.078125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "否则一个频道的否定信息会误删另一个尚未被听见的源。每个频道最多保留 4 条示向度",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 578.3295288085938,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "参与求交（按角度多样性择优选留）。当可行域顶点集的最小外接圆半径m 时，源已”锁住”，从圆心 c进入保证盘 B(c, 20 −RMEC) 内执行清除。 RMEC ≤20",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 72.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.3.3 三类任务混排与每停一次重规划",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 98.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "每一停，机器狗从当前点对手头任务求一条开路最短哈密顿路（不回起点），只走其中的",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 115.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "下一站，到达后重新规划。三类任务为：",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 138.451416015625,
+      "x": 90.0,
+      "size": 14.662130355834961,
+      "text": "1. 能清 𝒯clear：RMEC ≤20，目标进入保证盘；",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 157.25140380859375,
+      "x": 90.0,
+      "size": 14.662130355834961,
+      "text": "2. 补测保证接收域/探点 𝒯 Cstationrecv，实现上取沿示向离开约：只有一条楔形或定位区域仍太大，补测站概念上是问题二的 1000 m、偏开 ±30∘ 的候选点；",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 193.05142211914062,
+      "x": 90.0,
+      "size": 14.662130355834961,
+      "text": "3. 听洞 𝒯cover：贪心集合覆盖后仍需要去的普查点。",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 219.05142211914062,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "开路最短哈密顿路在任务点数 ≤16 时用 Held–Karp 算法精确求解（状态转移",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 236.05142211914062,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "dp[mask][ j] = mini∈mask,￼i≠j(dp[mask\\{j}][i] + dij)），点数更多时用 2-opt 启发",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 257.5404052734375,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "式。对已能清除的源，其”城市”是保证盘而非单点，进入点取盘边界上离上一站最近的",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 274.5404052734375,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "点。同一站能测的测完、能清的清完再走，没有固定优先级。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 300.5404052734375,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.3.4 停机规则",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 326.5404052734375,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "官方接口不返回”还剩几只”，任务结束不能按剩余个数判定。本文停机规则：所有已听见",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 343.5404052734375,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "的频道要么已清除、要么不再追击，且 7 点覆盖网上不存在仍需听的洞；或已听见 16 只",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 360.5404052734375,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "源（题面上限）。这是充分停机条件（“按本文规则已无待办任务”），而非”场上已无源”",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 377.5404052734375,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "的完备证明。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 403.5404052734375,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.3.5 求解结果",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 429.5404052734375,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "表 2　问题三本地 10000 局方法对比（非官方模拟器）",
+      "fonts": [
+        "PingFangSC-Semibold",
+        "Helvetica-Bold",
+        "PingFangSC-Semibold",
+        "Helvetica-Bold",
+        "PingFangSC-Semibold"
+      ]
+    },
+    {
+      "y": 461.2904052734375,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "策略清完率均时 / s中位 / s均走 / m平均检测 /",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 478.2904052734375,
+      "x": 406.0,
+      "size": 12.0,
+      "text": "次",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 504.0403747558594,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "静态对99.72%5512541022536155.2",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 521.0404052734375,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "照：先 7",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 538.0404052734375,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "点普查再",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 555.0404052734375,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "清",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 580.7904052734375,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "早期动态98.74%4340428716617158.7",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 597.7904052734375,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "（未加",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 614.7904052734375,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "固）",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 76.94998168945312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "策略清完率均时 / s中位 / s均走 / m平均检测 /",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 93.94998168945312,
+      "x": 406.0,
+      "size": 12.0,
+      "text": "次",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 119.69998168945312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "上场：可99.95%3431.93407.313252119.7",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 136.69998168945312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "行域 + 混",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 153.69998168945312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "排（停机",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 170.69998168945312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "规则）",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 199.70144653320312,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "本策略较静态对照平均缩短 5512 −3431.9 = 2080 s（约 38%），且清完率更高；早",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 219.45001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "期动态虽更快但清完率降至 98.74%，说明仅追求走路最短、不加可行域加固会引入漏",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 236.45001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "清。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 422.8724060058594,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "图 7　三种策略的清完率与平均总时间对比（本地 10000 局，非官方；按停机规则停",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 439.8724060058594,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "机）",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 298.88360595703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "图 8　问题三全向干扰源在线搜索与混排清除全景轨迹与时序演进图",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 324.88360595703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "图 8 给出 16 个全向干扰源极端规模场景下的典型仿真轨迹（种子族 2032）。机器狗从",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 341.88360595703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "原点出发后并未机械遍历 7 个骨干普查点，而是在巡航途中实时用示向度更新各频道可",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 356.1350402832031,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "行域哈密顿路顺势切入目标点（清除点图显示：前约 Ωk；当定位区域收缩至 600 s 为骨干建网与可行域收缩阶段，随后进入密集清除阶段，清除进度 RMEC C ≤201 ∼C m 16时立即在线触发追击与激光清除，并沿开路），清完后就近衔接未覆盖的普查区域。右",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 409.88360595703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "呈陡峭阶梯状跃升，最终仅耗时 3467.6 s 即以 100% 成功率全清 16 只源、平均每源",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 424.1350402832031,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "216.7 s，并在全场无残留未知格点后触发 Ω 空证书安全停机。",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 452.88360595703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "表 3　问题三官方正式三次测试",
+      "fonts": [
+        "PingFangSC-Semibold",
+        "Helvetica-Bold",
+        "PingFangSC-Semibold"
+      ]
+    },
+    {
+      "y": 484.63360595703125,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "序号案例编码清除数总时间/s平均清除运行时间/s",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 501.6336364746094,
+      "x": 340.0,
+      "size": 12.0,
+      "text": "时间/(s/源)",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 529.1838989257812,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "1S589-163524.51220.282.694",
+      "fonts": [
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 543.1838989257812,
+      "x": 142.0,
+      "size": 12.0,
+      "text": "ME5P-",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 557.1838989257812,
+      "x": 142.0,
+      "size": 12.0,
+      "text": "AVEG-7F",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 571.1838989257812,
+      "x": 142.0,
+      "size": 12.0,
+      "text": "VF",
+      "fonts": [
+        "Helvetica"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 76.94998168945312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "序号案例编码清除数总时间/s平均清除运行时间/s",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 93.94998168945312,
+      "x": 340.0,
+      "size": 12.0,
+      "text": "时间/(s/源)",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 121.50017547607422,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "2CRNF-133362.51258.651.987",
+      "fonts": [
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 135.5001678466797,
+      "x": 142.0,
+      "size": 12.0,
+      "text": "M248-",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 149.5001678466797,
+      "x": 142.0,
+      "size": 12.0,
+      "text": "R8CD-3Q",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 163.5001678466797,
+      "x": 142.0,
+      "size": 12.0,
+      "text": "E2",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 186.2501678466797,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "3G3WW-123001.98250.172.519",
+      "fonts": [
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 200.2501983642578,
+      "x": 142.0,
+      "size": 12.0,
+      "text": "HEAT-",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 214.2501983642578,
+      "x": 142.0,
+      "size": 12.0,
+      "text": "UQXS-8K",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 228.2501983642578,
+      "x": 142.0,
+      "size": 12.0,
+      "text": "7V",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 255.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "三次均按停机规则正常停机、清除失败 0 次；第 1 次清除 16 只（题面上限），第 2、3",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 272.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "次接口不显示剩余只数，只写清除个数、不推断是否清完。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 298.3999938964844,
+      "x": 72.0,
+      "size": 14.0,
+      "text": "6.4 问题四：全向/定向混合干扰源搜索清除策略",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 322.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.4.1 定向源特性与问题三方案的失效分析",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 344.5122985839844,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "定向干扰源具有未知朝向角 φ，仅向朝向两侧各 90∘（共 180∘ 半平面扇形，含边界）辐",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 362.4514465332031,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "射，有效接收半径 R ∈[1000, 1500] m。问题三方案必须重构，原因有二：",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 391.20001220703125,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "1. 盲区致命：问题三的 7 点普查网全在 1800 m 圆内，贴边朝外的定向源其可听半",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 408.20001220703125,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "平面完全落在圈外，圈内怎么走都听不到；",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 427.0,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "2. 观测更新失效：全向源的 no_signal 代表该半径内无源（可挖掉整个圆盘）；但",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Courier",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 444.0,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "定向源的 no_signal 仅仅代表”源没有面向你”，源完全可能就在旁边背对着你，",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Courier",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 461.0,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "绝对不能挖掉整盘。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 482.0,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.4.2 位置×朝向联合状态表示（集员滤波）",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 504.31231689453125,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "每个频道建立一个二维 10￼m 网格 64 ×个离散朝向角（每角 5.625∘）的位掩码矩阵作",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 525.0,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "为保守状态集（集员滤波思想）：",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 547.3123168945312,
+      "x": 90.0,
+      "size": 14.662130355834961,
+      "text": "•收到 no_signal：仅剔除指向当前检测点的 180∘ 朝向角位，不挖位置圆盘；",
+      "fonts": [
+        "Symbol",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Courier",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 565.585205078125,
+      "x": 90.0,
+      "size": 14.662130355834961,
+      "text": "•收到站点的 direction 180∘ 内。（示向度 θ）：位置约束在 θ ± 1∘ 楔形内，朝向约束在面向当前",
+      "fonts": [
+        "Symbol",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Courier",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 69.451416015625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "负信息不对称定理：对全向假设，no_signal@q ⇒d(x, q) > R ≥Rmin，圆盘",
+      "fonts": [
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 86.451416015625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "B(q, Rmin) 内所有位置被确定排除；对定向假设，出扇同样产生 no_signal、几乎无位置",
+      "fonts": [
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 106.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "信息。因此普查与补测的”沉默证据”只能按朝向维度衰减处理，绝不能对已听见频道执行",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 123.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "圆盘挖除（图 9）。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 260.8046875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "图 9　干扰源类型（左）与正负观测的信息不对称（右）",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 283.8046875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.4.3 创新机制一：N19 超凸包普查网络",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 307.0561218261719,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "发现阶段需要m 正六边形（”6 沉默即可认证为空站）+ 外环半径 1825 m ”的证明。构造正十二边形（旋转 N19 站网：原点 15∘， (0, 0)12 站），共 + 内圈半径 19 站（图 1000",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 343.8046875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "10）。外环凸包半径达到 1825 m，严格包裹住 1800 m 竞赛区域：紧贴圆边、朝向外侧",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 360.8046875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "的定向源，其可听半平面大部分落在圈外，只能从圆外听见。数值核验表明，最坏条件下",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 377.8046875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "对任意边缘朝外定向源的残余漏听率低于 0.06%。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 326.6482849121094,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "图 10　N19 超凸包普查站网（圆心 + 内圈 1000 m 六边形 + 外环 1825 m 正十二边形）",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 349.6482849121094,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.4.4 创新机制二：逆时针单向顺流推进（CCW Flow）",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 375.6482849121094,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "机器狗按逆时针由内向外巡检：内圈正六边形按逆时针普查结束后，顺势切入外环第一站",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 388.960693359375,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "（15∘ 偏角），保持单向角动量推进。相比反向顺时针切入（CW），避免了内外圈交界",
+      "fonts": [
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 409.6482849121094,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "处的巨大折返过渡惩罚，实测单局净省 1220 s、少走 4.6 km（表 7）。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 435.6482849121094,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.4.5 创新机制三：1300 m 扇区单向延迟收割",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 461.6482849121094,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "传统贪心在外环巡检时，一旦锁定源就立即掉头折返跨越半个圆周去清，会引发灾难性",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 474.960693359375,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "的”跨半球拉锯跑”。本文规则：若目标在身后远端（逆时针夹角 90∘∼330∘ 且距离",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 492.89984130859375,
+      "x": 76.07281494140625,
+      "size": 14.662130355834961,
+      "text": "> 1300 m），强制挂起延迟、禁止回头，保持外环单向推进，等环线自然巡检绕到该",
+      "fonts": [
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 512.6483154296875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "扇区邻近位置时顺路收割。实测平均少跑 4.18 km，局均净省 641 s（稀疏局暴省 1313",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 529.6483154296875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "s）（表 6）。",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 555.6483154296875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.4.6 创新机制四：奔袭转场静默免听",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 581.6483154296875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "机器狗在赶路奔袭与补站交会过程中，仅测听正在追踪的活跃源，彻底屏蔽对未知频道的",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 598.6483154296875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "盲听；普查任务严格收敛于 19 个正规普查点，单局砍掉 8–10 次无效停测时间税。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 72.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "整体算法流程如图 11 所示。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 409.0328063964844,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "图 11　问题四算法整体流程（N19 + 逆时针顺流 + 扇区延迟收割 + 奔袭静默免听）",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 432.0328063964844,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.4.7 三模自主停机（无上帝视角）",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 458.0328063964844,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "终止规则完全基于信念、不读取剩余源数真值，三模停机：条件 A 累计听全 16 只干扰源",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 475.0328063964844,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "（题面上限）；条件 B 所有未听频道的朝向掩码位全空（空证书）；条件 C 未听频道的",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 489.28424072265625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "后验残余质量均值 ≤1%（ε-收敛停机）。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 518.0328369140625,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "6.4.8 求解结果",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 544.0328369140625,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "（1）官方正式三次测试。 在官方模拟器上三次正式测试均清除全部干扰源，结果见表",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 561.0328369140625,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "4。",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 587.0328369140625,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "表 4　问题四官方正式三次测试",
+      "fonts": [
+        "PingFangSC-Semibold",
+        "Helvetica-Bold",
+        "PingFangSC-Semibold"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 76.94998168945312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "序号清除数总时间/s平均清除时运行时间/s",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 93.94998168945312,
+      "x": 313.6000061035156,
+      "size": 12.0,
+      "text": "间/(s/源)",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 121.50017547607422,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "1126902.50575.2127.255",
+      "fonts": [
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 144.2501678466797,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "2116370.99579.1812.416",
+      "fonts": [
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 167.0001678466797,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "3158663.87577.5922.349",
+      "fonts": [
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 193.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "三次测试的单源耗时分别为 575.21 / 579.18 / 577.59 s（样本量 n=3），波动幅度",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 210.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "0.69%；其中第 3 次抽到 15 源的重度极值大局，依然 15/15 全部肃清。压力演练中 16",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 227.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "源顶格极值局达成 16 听 16 清、单源耗时进一步压低至 470.09 s/源，提前触发证书停",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 244.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "机。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 270.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "（2）1 万局大规模蒙特卡洛仿真。 在未知源数量（10–16）、未知空间坐标、未知波束",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 287.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "朝向（全向/定向各 50%）下运行 10000 局高保真仿真，结果见表 5。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 313.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "表 5　问题四 10000 局蒙特卡洛仿真评测结果",
+      "fonts": [
+        "PingFangSC-Semibold",
+        "Helvetica-Bold",
+        "PingFangSC-Semibold",
+        "Helvetica-Bold",
+        "PingFangSC-Semibold"
+      ]
+    },
+    {
+      "y": 345.70001220703125,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "统计指标数值说明",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 371.45001220703125,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "仿真规模10000 局10–16 源随机场景",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 397.20001220703125,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "满清局数 / 满清率9980 局 / 99.80%Wilson 95% CI",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 413.0002136230469,
+      "x": 340.0,
+      "size": 12.0,
+      "text": "[99.69%, 99.87%]",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 433.95001220703125,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "干扰源总清除率99.98%（130319/1303混合源宏观清除比例",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 450.9499816894531,
+      "x": 208.0,
+      "size": 12.0,
+      "text": "39 只）",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 476.6999816894531,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "全向源专项清除率100.00%64957 只全向源无一漏",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 493.6999816894531,
+      "x": 340.0,
+      "size": 12.0,
+      "text": "检",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 519.4500122070312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "定向源专项清除率99.97%（65362/65382 180° 隐蔽定向源捕获",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 536.4500122070312,
+      "x": 208.0,
+      "size": 12.0,
+      "text": "只）率",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 562.2000122070312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "满清局平均完成时间6642.66 s/局中位 6566.84 s，P95",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 581.0001831054688,
+      "x": 340.0,
+      "size": 12.0,
+      "text": "7761.36 s",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 601.9500122070312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "平均单源清除用时521.15 s/源逐局平均口径，95% CI",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 620.750244140625,
+      "x": 340.0,
+      "size": 12.0,
+      "text": "[519.41, 522.88]",
+      "fonts": [
+        "Helvetica"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 76.94998168945312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "统计指标数值说明",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 102.69998168945312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "平均行进路程23835 m/局约 23.84 km",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 128.44998168945312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "平均测向切频次数303.17 次/局采样总频次",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 154.19998168945312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "程序异常局数0全部 10000 局正常运",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 171.19998168945312,
+      "x": 340.0,
+      "size": 12.0,
+      "text": "行",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 202.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "按每局源数 10–16 分组，各组满清率依次为 99.85%、99.79%、99.93%、99.93%、",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 217.20144653320312,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "99.72%、99.65%、99.73%，平均停止时间 6443.9∼6898.5 s，随源数单调上升，不存",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 236.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "在源数偏置。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 262.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "（3）残留源机理剖析（核心亮点）。 10000 局中 20 局未满清，且每局均仅剩 1 只定向",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 277.2014465332031,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "源，全部走齐 19 个普查点后由 -ε收敛规则正常停机，全部全向源无一漏检。这说明算法",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 296.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "在常规及绝大多数复杂场景下均能实现满清，仅在极少数”贴近场地边界且主瓣背向场内”",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 313.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "的定向源几何奇点处存在极小漏检（发生率 0.20%），从逆向印证了 N19 外环站网已逼",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 330.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "近边界几何覆盖的理论极值。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 356.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "（4）与问题三策略直接移植的对比（消融分析）。 若将问题三算法直接移植至问题四",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 373.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "（p3port 基线），由于全向负信息误挖洞与 7 点网对定向源存在 25.3% 覆盖盲区，清除",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 390.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "率断崖式暴跌至 24.1%（纯定向下仅 5.3%）；本文的位置×朝向集员滤波 + N19 完备普",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 407.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "查网 + 扇区单向延迟收割将清除率提升至 99.98%，彻底解决了定向源隐蔽性带来的挑",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 424.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "战。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 450.9499816894531,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "（5）典型运行轨迹。 图 13 给出 12 只混合源（7 只定向、5 只全向，与正式测试 1 规模",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 467.9499816894531,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "对齐）满清案例的完整轨迹：紫色扇区为定向源真实 180° 辐射范围，机器狗沿内圈 6 点",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 484.9499816894531,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "建立粗测向集后，按逆时针单向顺流展开外环 12 点巡航，从侧翼”包抄”定向源主瓣并一",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 499.2014465332031,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "次性延迟收割（清除点最终由动态朝向网格残余质量收敛停机。 C1 ∼C12）；右图显示累计路程 21.75 km、单源均时 528.3 s，",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 229.27340698242188,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "图 12　问题四 1 万局清除率与官方三次正式测试单源耗时",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 478.9570007324219,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "图 13　问题四复杂定向/全向混合源 N19 顺流巡航与扇区延迟收割轨迹图",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular",
+        "Helvetica-Oblique",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 503.3570251464844,
+      "x": 72.0,
+      "size": 16.0,
+      "text": "7 模型检验与结果分析",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 534.95703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "（1）问题一：已知形状解析验证。 对等边三角形、正方形、长方形、直角三角形、正五",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 551.95703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "边形、正六边形、正 36 边形用解析理论值验证，直径与最小包围圆的最大绝对误差约",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 565.2693481445312,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "1.8 × 10−15；对 2000 组随机凸多边形，旋转卡壳与暴力枚举、Welzl 与暴力最小包围",
+      "fonts": [
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 585.95703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "圆全部一致；对 10000 次随机真实源仿真，真实源 100% 落在计算出的定位区域内（5",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 602.95703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "次因区域无界被正确单列）。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 72.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "（2）问题二：交叉验证与灵敏度。 两套独立实现（不同几何引擎与采样方案）在共同候",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 89.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "选点上重评，三构型最坏直径绝对差 0.0017 / 0.0005 / 0.0052 m，互证到毫米级；最坏",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 103.451416015625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "情形一致出现在楔形远弧端点 × 误差极值处；容差 α ∈[1.1, 1.5] 时候选区域形状稳",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 120.45142364501953,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "定，最优点向内回退约 3 m 后 J仅增 0.3%。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 146.451416015625,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "（3）问题三：覆盖网覆盖性与鲁棒性。 7 点覆盖网最坏点距 989 m < 1000 m，在最",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 166.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "坏接收半径下保证每源至少被听见一次；10000 局中 5 个未清局均只剩 1 只源、都撞",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 183.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "160 步上限，属”听见之后锁不住”的定位边角情况而非覆盖网漏听；清完率 95% 置信区",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 197.45144653320312,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "间 [99.91%, 99.99%]；官方三次测试均正常停机、清除失败 0 次。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 226.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "（4）问题四：消融实验与稳健性检验。 三组严格同种子、同世界的配对消融实验验证了",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 243.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "三大机制的真实收益：",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 269.20001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "表 6　扇区单向延迟收割消融实验（官方模拟器 6 对 6 局）",
+      "fonts": [
+        "PingFangSC-Semibold",
+        "Helvetica-Bold",
+        "PingFangSC-Semibold",
+        "Helvetica-Bold",
+        "PingFangSC-Semibold",
+        "Helvetica-Bold",
+        "PingFangSC-Semibold"
+      ]
+    },
+    {
+      "y": 300.95001220703125,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "策略版本满额全清率平均总用时 / 平均路程 / 10 源局用",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 317.95001220703125,
+      "x": 234.39999389648438,
+      "size": 12.0,
+      "text": "skm时 / s",
+      "fonts": [
+        "Helvetica",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 343.70001220703125,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "原版贪心巡100%7014.226.787236.0",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 360.70001220703125,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "检（无扇区",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 377.70001220703125,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "延迟）",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 403.45001220703125,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "扇区延迟收100%6373.122.605923.0",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 420.45001220703125,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "割（本文）",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 446.1999816894531,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "优化收益维持 100%净省 641.1 s少走 4.18 km暴省 1313 s",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 463.1999816894531,
+      "x": 234.39999389648438,
+      "size": 12.0,
+      "text": "（−9.1%）（−15.6%）（−18.1%）",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 494.9499816894531,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "表 7　外环巡检旋向消融实验（严格同种子配对）",
+      "fonts": [
+        "PingFangSC-Semibold",
+        "Helvetica-Bold",
+        "PingFangSC-Semibold"
+      ]
+    },
+    {
+      "y": 526.7000122070312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "场景种子源数逆时针顺顺时针反用时净收路程净收",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 543.7000122070312,
+      "x": 208.0,
+      "size": 12.0,
+      "text": "流（本向 / s益益",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 560.7000122070312,
+      "x": 208.0,
+      "size": 12.0,
+      "text": "文）/ s",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 586.4500122070312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "Seed 106170.37390.9净省 少走 4.62",
+      "fonts": [
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 602.2501831054688,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "20271220.5 skm",
+      "fonts": [
+        "Helvetica",
+        "Helvetica",
+        "Helvetica"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 76.94998168945312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "场景种子源数逆时针顺顺时针反用时净收路程净收",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 93.94998168945312,
+      "x": 208.0,
+      "size": 12.0,
+      "text": "流（本向 / s益益",
+      "fonts": [
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 110.94998168945312,
+      "x": 208.0,
+      "size": 12.0,
+      "text": "文）/ s",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 136.69998168945312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "Seed 126340.06340.0持平持平",
+      "fonts": [
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 152.5001678466797,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "2028",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 173.44998168945312,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "Seed 156100.96194.6净省 93.7 少走 573",
+      "fonts": [
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 189.2501678466797,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "2029sm",
+      "fonts": [
+        "Helvetica",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 213.20001220703125,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "Seed 126819.16819.1持平持平",
+      "fonts": [
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 229.0001983642578,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "2030",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 255.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "逆时针巡检在所有局目中全面占优或持平，原因在于内圈正六边形普查按逆时针进行、结",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 269.2622985839844,
+      "x": 72.0,
+      "size": 14.662130355834961,
+      "text": "束后顺势切入外环第一站（15∘）保持角动量顺流。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 298.95001220703125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "表 8　延迟距离门限敏感性（1300 m vs 1150 m）",
+      "fonts": [
+        "PingFangSC-Semibold",
+        "Helvetica-Bold",
+        "PingFangSC-Semibold",
+        "Helvetica-Bold",
+        "PingFangSC-Semibold"
+      ]
+    },
+    {
+      "y": 330.70001220703125,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "门限设置Seed Seed Seed Seed 平均路程 /",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 346.5002136230469,
+      "x": 142.0,
+      "size": 12.0,
+      "text": "2027 / s2028 / s2029 / s2030 / sm",
+      "fonts": [
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 370.45001220703125,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "收紧6298.36340.06100.96819.122113.1",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 387.45001220703125,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "（1150",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 404.45001220703125,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "m）",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 430.20001220703125,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "基准6170.36340.06100.96819.121924.2",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 447.1999816894531,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "（1300",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 464.1999816894531,
+      "x": 76.0,
+      "size": 12.0,
+      "text": "m，本文）",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 495.9499816894531,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "1300 m 门限位于”防远端折返”与”就近顺路切入”的黄金分割点，收紧至 1150 m 会迫使近",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 512.9500122070312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "场源滞后补清、多走 755 m。此外，官方三次正式测试的单源耗时波动幅度仅 0.69%，",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 529.9500122070312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "在未知源数、未知朝向、±1° 测向误差的黑盒世界中高度收敛于 577 s/源，验证了算法的",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 546.9500122070312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "强鲁棒性与抗随机性。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 71.5999984741211,
+      "x": 72.0,
+      "size": 16.0,
+      "text": "8 模型评价与改进",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 102.39999389648438,
+      "x": 72.0,
+      "size": 14.0,
+      "text": "8.1 模型优点",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 126.19998168945312,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "1. 几何意义清晰、判据严格：角形区域到半平面的转化精确等价（引理 1），覆盖判",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 143.19998168945312,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "定由定理 4 给出充要条件，有界性由衰退锥判据严格给出（定理 1），不引入人为",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 157.451416015625,
+      "x": 108.0,
+      "size": 14.662130355834961,
+      "text": "截断；直径 O(m)、最小包围圆期望 O(m)、半平面交 O(klogk)，可被在线策略",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 177.19998168945312,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "高频调用。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 193.25143432617188,
+      "x": 90.0,
+      "size": 14.662130355834961,
+      "text": "2. 状态完备、数值口径诚实：显式处理空/有界/无界三态；问题二的 J如实标注为有",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 213.0,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "限网格上确界估计，本地仿真与官方测试口径严格分离。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 231.79998779296875,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "3. 在线决策闭环完整：每频道独立可行域的集员估计避免交叉误删，覆盖与追击混",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 248.79998779296875,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "排、每停一次重规划显著缩短总时间（问题三较静态对照省 38%）。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 267.6000061035156,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "4. 可证明的完备性与机制创新：问题四的 N19 超凸包站网把”沉默”变成可证明的”空”",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 284.6000061035156,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "（漏听率 <0.06%），是 99.98% 清除率的根基；逆时针顺流、扇区延迟收割、奔",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 301.6000061035156,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "袭静默免听三大机制在消融实验中分别带来 641 s、1220 s 的真实收益。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 320.3999938964844,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "5. 可对接性与可推广性：决策只依赖接口返回值、不读模拟器真值，可直接对接官方",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 337.3999938964844,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "接口；框架可推广至多智能体协同搜索、未知辐射源监测等”信息获取与行动执行",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 354.3999938964844,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "耦合”场景。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 379.6000061035156,
+      "x": 72.0,
+      "size": 14.0,
+      "text": "8.2 模型局限与改进方向",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 399.7123107910156,
+      "x": 90.0,
+      "size": 14.662130355834961,
+      "text": "1. 问题一：区域构造为 O(n3)，检测点很多时效率低于 O(nlogn) 经典半平面交算",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 420.3999938964844,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "法；未建模误差相关性（同一地点重复测量误差不独立）；未考虑定向干扰源的覆",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 437.3999938964844,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "盖角约束。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 453.451416015625,
+      "x": 90.0,
+      "size": 14.662130355834961,
+      "text": "2. 问题二：J 为有限网格上的最坏值估计，连续上确界与连续全局最优尚未严格认",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 473.1999816894531,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "证；按有界最坏情形处理偏保守；仅演示三个典型构型。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 492.0,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "3. 问题三：覆盖网按最坏接收半径 1000 m 设计偏保守；任务较多时开路哈密顿路退",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 508.9999694824219,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "化为 2-opt 启发式；仍有 5 局（0.05%）“听见之后锁不住”。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 527.800048828125,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "4. 问题四：依赖”无遮挡、无随机漏检”的官方规则前提；延迟收割门限（1300 m）",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 544.800048828125,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "与朝向网格分辨率（64 角）为经验参数；1 万局中仍有 0.20% 的”贴边背向”几何",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 561.800048828125,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "奇点漏检（均为单只定向源）。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 587.800048828125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "改进方向：以区间算术对问题二做连续全局最优认证；为问题三剩余未清局设计沿可行域",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 604.800048828125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "长轴定向扫掠的兜底搜索；对问题四的”贴边背向”奇点增设边界外侧定向补听环，并自适",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 621.800048828125,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "应调节延迟收割门限。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 71.5999984741211,
+      "x": 72.0,
+      "size": 16.0,
+      "text": "9 结论",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 103.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "本文针对无线电干扰源快速自动定位与清除问题，按”交会定位—检测点选取—在线搜索",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 120.19998168945312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "清除”的递进层次建立了四个问题的数学模型，主要结论如下：",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 146.19998168945312,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "1. 问题一：建立”角形区域—半平面—凸多边形”的交会定位模型，用旋转卡壳求直",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 160.451416015625,
+      "x": 108.0,
+      "size": 14.662130355834961,
+      "text": "径、R率MEC 100%Welzl =。 D求最小包围圆，证明/2“，7 种已知形状验证误差约”存在直径为 10 D−15 的圆覆盖定位区域当且仅当 量级，10000 次仿真真实源包含",
+      "fonts": [
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "PingFangSC-Regular",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 213.25143432617188,
+      "x": 90.0,
+      "size": 14.662130355834961,
+      "text": "2. 问题二：推导保证接收域 Crecv 与最坏交会直径目标 J，三构型最优直径 111.0 /",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "STIXGeneral-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "STIXGeneral-Italic",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 233.0,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "41.0 / 8.2 m，最优第二检测点”贴外沿、偏角约 40°“，以 1.25 倍近最优水平集给",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 250.0,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "出候选区域，两套实现互证到毫米级。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 268.79998779296875,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "3. 问题三：提出”每频道可行域 + 覆盖混排 + 每停重规划”在线策略，官方三次测试清",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 285.79998779296875,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "除 16、13、12 个源、平均定位清除时间 220.28 / 258.65 / 250.17 s，本地万局清",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 302.79998779296875,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "完率 99.95%、较静态对照省时 38%。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 321.6000061035156,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "4. 问题四：建立位置×朝向联合网格的集员状态表示与 N19 超凸包普查站网，配合逆",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 338.6000061035156,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "时针顺流、扇区延迟收割、奔袭静默免听三大机制；官方三次测试单源耗时",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 355.6000061035156,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "575.21 / 579.18 / 577.59 s（波幅 0.69%），本地 1 万局满清率 99.80%、总清除",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 372.6000061035156,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "率 99.98%、全向源 100.00%，平均单源耗时 521.15 s/源。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 398.6000061035156,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "四个问题层层递进：问题一为全部定位计算奠基，问题二提供粗定位依据，问题三、四将",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 415.6000061035156,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "几何定位嵌入在线决策闭环，在官方模拟器与本地仿真上稳定实现高清除率与短总时间。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 432.6000061035156,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "本文模型几何意义清晰、判据严格、决策只依赖接口返回值，可为”信息获取与行动执行",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 449.6000061035156,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "耦合”的在线决策问题提供通用框架。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 475.0000305175781,
+      "x": 72.0,
+      "size": 16.0,
+      "text": "AI 工具使用声明",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 506.6000061035156,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "本参赛队在竞赛过程中使用了 AI 工具，主要用于语言润色、代码调试与图表绘制辅助，",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 523.6000366210938,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "详细使用情况见支撑材料《AI 工具使用详情》。所有 AI 生成内容均经队员逐项人工审查",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 540.6000366210938,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "与核实。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 566.0,
+      "x": 72.0,
+      "size": 16.0,
+      "text": "参考文献",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 599.4002075195312,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "[1] Welzl E. Smallest enclosing disks (balls and ellipsoids)[C]//New Results and New",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 613.4002685546875,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "Trends in Computer Science, LNCS 555. Berlin: Springer, 1991: 359-370.",
+      "fonts": [
+        "Helvetica"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 74.00017547607422,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "[2] Toussaint G T. Solving geometric problems with the rotating calipers[C]//Proceedings",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 88.00017547607422,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "of IEEE MELECON’83. Athens, 1983: A10.02/1-4.",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 111.00017547607422,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "[3] Preparata F P, Muller D E. Finding the intersection of n half-spaces in time O(n log n)",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 125.00017547607422,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "[J]. Theoretical Computer Science, 1979, 8(1): 45-55.",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 148.0001678466797,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "[4] Megiddo N. Linear-time algorithms for linear programming in R³ and related",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 162.0001678466797,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "problems[J]. SIAM Journal on Computing, 1984, 13(4): 759-776.",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 185.0001678466797,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "[5] Li P, Liu Y, Yan T, et al. An underwater source localization method using bearing",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 199.0001983642578,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "measurements[J]. Sensors, 2024, 24(5): 1627.",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 222.0001983642578,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "[6] Land A H, Doig A G. An Automatic Method of Solving Discrete Programming",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 236.0001983642578,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "Problems[J]. Econometrica, 1960, 28(3): 497-520.",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 259.0002136230469,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "[7] Torrieri D J. Statistical theory of passive location systems[J]. IEEE Transactions on",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 273.0002136230469,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "Aerospace and Electronic Systems, 1984, AES-20(2): 183-198.",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 296.0002136230469,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "[8] Milanese M, Vicino A. Optimal estimation theory for dynamic systems with set",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 310.0002136230469,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "membership uncertainty: an overview[J]. Automatica, 1991, 27(6): 997-1009.",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 333.0002136230469,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "[9] Bezdek K. Über einige Kreisüberdeckungen[J]. Beiträge zur Algebra und Geometrie,",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 347.0002136230469,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "1983, 14: 7-13.",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 370.0002136230469,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "[10] Held M, Karp R M. A dynamic programming approach to sequencing problems[J].",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 384.0002136230469,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "Journal of the Society for Industrial and Applied Mathematics, 1962, 10(1): 196-210.",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 407.0002136230469,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "[11] Arkin E M, Hassin R. Approximation algorithms for the geometric covering salesman",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 421.0002136230469,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "problem[J]. Discrete Applied Mathematics, 1994, 55(3): 197-218.",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 444.0002136230469,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "[12] Schweppe F C. Recursive state estimation: unknown but bounded errors and",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 458.0002136230469,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "system inputs[J]. IEEE Transactions on Automatic Control, 1968, 13(1): 22-28.",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 481.0002136230469,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "[13] Nardone S C, Lindgren A G, Gong K F. Fundamental properties and performance of",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 495.0002136230469,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "conventional bearings-only target motion analysis[J]. IEEE Transactions on Automatic",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 509.000244140625,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "Control, 1984, 29(9): 775-787.",
+      "fonts": [
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 529.5999755859375,
+      "x": 72.0,
+      "size": 16.0,
+      "text": "附录",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 560.3999633789062,
+      "x": 72.0,
+      "size": 14.0,
+      "text": "附录 A　支撑材料文件列表",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 584.2000122070312,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "•问题一：问题一代码final_修正版.py（半平面交 + 旋转卡壳 + Welzl + 覆盖判定",
+      "fonts": [
+        "Symbol",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 601.2000122070312,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "+ 仿真检验）、问题一_表格与图像.py、figs/（示向度、交会定位、角形区域",
+      "fonts": [
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 618.2000122070312,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "图）。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    }
+  ],
+  [
+    {
+      "y": 72.19998168945312,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "•问题二：code/problem2_model.py、problem2_paper.py、",
+      "fonts": [
+        "Symbol",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 89.19998168945312,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "problem1_localize.py（几何引擎）、test_problem2.py（14 项回归测",
+      "fonts": [
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 106.19998168945312,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "试）、final_refine.py、results/problem2_summary.json、figs/（三张候",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 123.19998168945312,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "选区域图）。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 141.99996948242188,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "•问题三：02-上场代码/（problem3_belief.py、problem3_route_solver.py、",
+      "fonts": [
+        "Symbol",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 158.99996948242188,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "run_official_e15.py 等）、新数据/（万局 summary.json、trials.csv）、04-正",
+      "fonts": [
+        "Courier",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 175.99996948242188,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "式测试-表1/（三份正式日志 formal-p3-*.jlog）。",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 194.79998779296875,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "•问题四：code/problem4_belief_n19.py（N19 主策略）、",
+      "fonts": [
+        "Symbol",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 211.79998779296875,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "run_official_n19.py、01_论文汇总表.csv、02_按源数分组表.csv、03_一万局",
+      "fonts": [
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 228.79998779296875,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "逐局原始数据.csv、04_未满清20局明细.csv、05_原始统计汇总.json、正式日志",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Helvetica"
+      ]
+    },
+    {
+      "y": 245.79998779296875,
+      "x": 108.0,
+      "size": 12.0,
+      "text": "formal-p4-*.jlog。",
+      "fonts": [
+        "Courier",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 264.6000061035156,
+      "x": 90.0,
+      "size": 12.0,
+      "text": "•AI 工具使用详情：AI 工具使用详情.pdf。",
+      "fonts": [
+        "Symbol",
+        "Helvetica",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular",
+        "Courier",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 289.8000183105469,
+      "x": 72.0,
+      "size": 14.0,
+      "text": "附录 B　源程序代码",
+      "fonts": [
+        "PingFangSC-Regular",
+        "Helvetica",
+        "PingFangSC-Regular"
+      ]
+    },
+    {
+      "y": 318.6000061035156,
+      "x": 72.0,
+      "size": 12.0,
+      "text": "完整、可运行的源程序代码见支撑材料，本附录不全文粘贴。",
+      "fonts": [
+        "PingFangSC-Regular"
+      ]
+    }
+  ]
+]

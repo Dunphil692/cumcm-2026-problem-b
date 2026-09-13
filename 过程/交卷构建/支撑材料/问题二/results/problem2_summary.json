@@ -1,0 +1,502 @@
+{
+  "scenarios": {
+    "center": {
+      "scenario": "center_reference",
+      "s1": [
+        0.0,
+        0.0
+      ],
+      "theta1_deg": 0.0,
+      "J_min_m": 110.974,
+      "best_point": {
+        "xy": [
+          844.0,
+          -544.0
+        ],
+        "distance_from_s1_m": 1004.13,
+        "offset_from_bearing_deg": -32.8,
+        "symmetric_xy": [
+          844.0,
+          544.0
+        ],
+        "symmetric_point_within_target_disk": true
+      },
+      "dense_J_m": 110.974,
+      "worst_case_witness": [
+        1.0,
+        1500.0,
+        1.0,
+        "NORMAL"
+      ],
+      "reception_margin_m": -0.0234,
+      "reception_margin_kind": "FINITE_NUMERICAL_SUPREMUM_NOT_CERTIFIED",
+      "candidate_region_1.25": {
+        "threshold_m": 138.7,
+        "cells": 276,
+        "left": {
+          "count": 138,
+          "distance_m": [
+            855.1,
+            1004.1
+          ],
+          "offset_deg": [
+            16.1,
+            60.1
+          ]
+        },
+        "right": {
+          "count": 138,
+          "distance_m": [
+            855.1,
+            1004.1
+          ],
+          "offset_deg": [
+            16.1,
+            60.1
+          ]
+        }
+      },
+      "alpha_sensitivity": [
+        {
+          "alpha": 1.05,
+          "J_m": 116.5,
+          "distance_m": [
+            970.8,
+            1000.0
+          ],
+          "offset_deg": [
+            25.3,
+            43.0
+          ],
+          "cells": 28
+        },
+        {
+          "alpha": 1.1,
+          "J_m": 122.1,
+          "distance_m": [
+            941.1,
+            1000.0
+          ],
+          "offset_deg": [
+            22.1,
+            51.1
+          ],
+          "cells": 78
+        },
+        {
+          "alpha": 1.25,
+          "J_m": 138.7,
+          "distance_m": [
+            855.1,
+            1004.1
+          ],
+          "offset_deg": [
+            16.1,
+            60.1
+          ],
+          "cells": 276
+        },
+        {
+          "alpha": 1.5,
+          "J_m": 166.5,
+          "distance_m": [
+            742.5,
+            1004.1
+          ],
+          "offset_deg": [
+            11.6,
+            64.2
+          ],
+          "cells": 548
+        },
+        {
+          "alpha": 2.0,
+          "J_m": 221.9,
+          "distance_m": [
+            561.8,
+            1004.1
+          ],
+          "offset_deg": [
+            8.7,
+            70.8
+          ],
+          "cells": 924
+        }
+      ],
+      "crosscheck_teammate_point": {
+        "xy": [
+          841.3601249898122,
+          -544.4349902715983
+        ],
+        "teammate_reported_JD_m": 111.29175232822992,
+        "our_independent_JD_m": 111.293,
+        "abs_diff_m": 0.0017,
+        "reception_margin_m": -2.0
+      },
+      "deployment_backoff_point": {
+        "xy": [
+          841.3601249898122,
+          -544.4349902715983
+        ],
+        "J_m": 111.293,
+        "reception_margin_m": -2.0,
+        "note": "推荐点贴 C_recv 边界时向内回退约 3 m 的稳健替代点"
+      },
+      "stages": [
+        {
+          "step": 25.0,
+          "J": 111.893,
+          "xy": [
+            850.0,
+            -525.0
+          ]
+        },
+        {
+          "step": 5.0,
+          "J": 110.962,
+          "xy": [
+            850.0,
+            -535.0
+          ]
+        },
+        {
+          "step": 1.0,
+          "J": 110.916,
+          "xy": [
+            851.0,
+            -534.0
+          ]
+        }
+      ],
+      "feasible_cells_25m_grid": 1906
+    },
+    "outward800": {
+      "scenario": "inside_outward_800",
+      "s1": [
+        -1000.0,
+        0.0
+      ],
+      "theta1_deg": 180.0,
+      "J_min_m": 40.972,
+      "best_point": {
+        "xy": [
+          -1594.81,
+          -511.35
+        ],
+        "distance_from_s1_m": 784.4,
+        "offset_from_bearing_deg": 40.69,
+        "symmetric_xy": [
+          -1594.81,
+          511.35
+        ],
+        "symmetric_point_within_target_disk": true
+      },
+      "dense_J_m": 40.972,
+      "worst_case_witness": [
+        -1.0,
+        800.0676954966103,
+        -1.0,
+        "NORMAL"
+      ],
+      "reception_margin_m": -219.329,
+      "reception_margin_kind": "FINITE_NUMERICAL_SUPREMUM_NOT_CERTIFIED",
+      "candidate_region_1.25": {
+        "threshold_m": 51.2,
+        "cells": 382,
+        "left": {
+          "count": 191,
+          "distance_m": [
+            592.7,
+            1000.0
+          ],
+          "offset_deg": [
+            24.4,
+            60.8
+          ]
+        },
+        "right": {
+          "count": 191,
+          "distance_m": [
+            592.7,
+            1000.0
+          ],
+          "offset_deg": [
+            24.4,
+            60.8
+          ]
+        }
+      },
+      "alpha_sensitivity": [
+        {
+          "alpha": 1.05,
+          "J_m": 43.0,
+          "distance_m": [
+            686.5,
+            919.9
+          ],
+          "offset_deg": [
+            33.1,
+            48.4
+          ],
+          "cells": 52
+        },
+        {
+          "alpha": 1.1,
+          "J_m": 45.1,
+          "distance_m": [
+            651.9,
+            1000.0
+          ],
+          "offset_deg": [
+            31.3,
+            53.1
+          ],
+          "cells": 138
+        },
+        {
+          "alpha": 1.25,
+          "J_m": 51.2,
+          "distance_m": [
+            592.7,
+            1000.0
+          ],
+          "offset_deg": [
+            24.4,
+            60.8
+          ],
+          "cells": 382
+        },
+        {
+          "alpha": 1.5,
+          "J_m": 61.5,
+          "distance_m": [
+            527.4,
+            1000.0
+          ],
+          "offset_deg": [
+            19.2,
+            70.6
+          ],
+          "cells": 722
+        },
+        {
+          "alpha": 2.0,
+          "J_m": 81.9,
+          "distance_m": [
+            424.3,
+            1000.0
+          ],
+          "offset_deg": [
+            12.8,
+            83.7
+          ],
+          "cells": 1134
+        }
+      ],
+      "crosscheck_teammate_point": {
+        "xy": [
+          -1594.8117693963113,
+          -511.3500635770528
+        ],
+        "teammate_reported_JD_m": 40.971382567388595,
+        "our_independent_JD_m": 40.972,
+        "abs_diff_m": 0.0005,
+        "reception_margin_m": -219.3292
+      },
+      "deployment_backoff_point": null,
+      "stages": [
+        {
+          "step": 25.0,
+          "J": 41.075,
+          "xy": [
+            -1600.0,
+            -550.0
+          ]
+        },
+        {
+          "step": 5.0,
+          "J": 40.988,
+          "xy": [
+            -1595.0,
+            -515.0
+          ]
+        },
+        {
+          "step": 1.0,
+          "J": 40.973,
+          "xy": [
+            -1594.0,
+            -505.0
+          ]
+        }
+      ],
+      "feasible_cells_25m_grid": 2111
+    },
+    "tangent": {
+      "scenario": "tangent_boundary",
+      "s1": [
+        1790.0,
+        0.0
+      ],
+      "theta1_deg": 90.0,
+      "J_min_m": 8.171,
+      "best_point": {
+        "xy": [
+          1688.4,
+          120.53
+        ],
+        "distance_from_s1_m": 157.64,
+        "offset_from_bearing_deg": 40.13,
+        "symmetric_xy": [
+          1891.6,
+          120.53
+        ],
+        "symmetric_point_within_target_disk": false
+      },
+      "dense_J_m": 8.171,
+      "worst_case_witness": [
+        -1.0,
+        160.79124614842695,
+        -1.0,
+        "NORMAL"
+      ],
+      "reception_margin_m": -846.0915,
+      "reception_margin_kind": "FINITE_NUMERICAL_SUPREMUM_NOT_CERTIFIED",
+      "candidate_region_1.25": {
+        "threshold_m": 10.2,
+        "cells": 12,
+        "left": {
+          "count": 12,
+          "distance_m": [
+            125.0,
+            235.8
+          ],
+          "offset_deg": [
+            31.0,
+            60.3
+          ]
+        },
+        "right": {
+          "count": 0
+        }
+      },
+      "alpha_sensitivity": [
+        {
+          "alpha": 1.05,
+          "J_m": 8.6,
+          "distance_m": [
+            160.1,
+            176.8
+          ],
+          "offset_deg": [
+            38.7,
+            45.0
+          ],
+          "cells": 2
+        },
+        {
+          "alpha": 1.1,
+          "J_m": 9.0,
+          "distance_m": [
+            160.1,
+            195.3
+          ],
+          "offset_deg": [
+            38.7,
+            50.2
+          ],
+          "cells": 3
+        },
+        {
+          "alpha": 1.25,
+          "J_m": 10.2,
+          "distance_m": [
+            125.0,
+            235.8
+          ],
+          "offset_deg": [
+            31.0,
+            60.3
+          ],
+          "cells": 12
+        },
+        {
+          "alpha": 1.5,
+          "J_m": 12.3,
+          "distance_m": [
+            125.0,
+            313.2
+          ],
+          "offset_deg": [
+            21.8,
+            71.6
+          ],
+          "cells": 35
+        },
+        {
+          "alpha": 2.0,
+          "J_m": 16.3,
+          "distance_m": [
+            106.1,
+            443.0
+          ],
+          "offset_deg": [
+            18.4,
+            90.0
+          ],
+          "cells": 112
+        }
+      ],
+      "crosscheck_teammate_point": {
+        "xy": [
+          1688.3980060336946,
+          120.52869612498694
+        ],
+        "teammate_reported_JD_m": 8.165802,
+        "our_independent_JD_m": 8.171,
+        "abs_diff_m": 0.0052,
+        "reception_margin_m": -846.0917
+      },
+      "deployment_backoff_point": null,
+      "stages": [
+        {
+          "step": 25.0,
+          "J": 8.41,
+          "xy": [
+            1665.0,
+            125.0
+          ]
+        },
+        {
+          "step": 5.0,
+          "J": 8.19,
+          "xy": [
+            1690.0,
+            120.0
+          ]
+        },
+        {
+          "step": 1.0,
+          "J": 8.172,
+          "xy": [
+            1685.0,
+            121.0
+          ]
+        }
+      ],
+      "feasible_cells_25m_grid": 1967
+    }
+  },
+  "model": {
+    "source_domain": "B(O,1800) ∩ W(S1,θ1,±1°) ∩ {5<d1≤1500}, per-direction target-circle clipping",
+    "reception": "C_recv = ∩ B(g, max(1000,‖g−S1‖)); three-circle leaf is conservative sufficient condition",
+    "posterior": "W1 ∩ W2 ∩ Ω1 ∩ {5<d2≤1500} (clipped correction; old 135m was unclipped)",
+    "objective": "J(q) = finite-grid worst clipped posterior diameter; near-field STRONG branch exact",
+    "honesty": {
+      "finite_numerical_supremum": true,
+      "continuous_certified": false,
+      "global_optimum_certified": false,
+      "alpha_1.25_is_tolerance_not_constant": true
+    }
+  }
+}

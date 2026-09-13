@@ -1,0 +1,66 @@
+<mxfile host="app.diagrams.net" agent="问题三论文">
+  <diagram id="fig3_flow" name="图3 三类任务混排">
+    <mxGraphModel dx="900" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="start" value="机器狗当前点" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="140" y="60" width="160" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="upd" value="更新各频道可行域（每频道一张可能区域）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="120" y="140" width="200" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="tasks" value="生成三类任务&#10;① 能清（MEC≤20）&#10;② 补测（单楔形/区域太大）&#10;③ 听洞（未覆盖点）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="120" y="230" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="route" value="开路最短哈密顿路&#10;（Held–Karp / 2-opt）&#10;只走下一站" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="120" y="350" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="move" value="移动到下一站&#10;同站测完、清完" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="130" y="460" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="dec" value="可行域空证书&#10;是否成立？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="130" y="550" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="end" value="结束" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="150" y="700" width="140" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="start" target="upd">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="upd" target="tasks">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="tasks" target="route">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="route" target="move">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="move" target="dec">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="是" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#000000;fontSize=12;" edge="1" parent="1" source="dec" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="否" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;" edge="1" parent="1" source="dec" target="upd">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="590" />
+              <mxPoint x="360" y="165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

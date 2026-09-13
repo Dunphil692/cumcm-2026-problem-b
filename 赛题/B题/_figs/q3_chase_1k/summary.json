@@ -1,0 +1,27 @@
+{
+  "n": 1000,
+  "seed": 2027,
+  "policy": "chase",
+  "official_simulator": false,
+  "fullopt_godstop_10k_mean_s": 3797.54,
+  "fullopt_godstop_10k_s_per_source": 291.4,
+  "wall_s": 198.19089102745056,
+  "workers": 7,
+  "clear_rate": 1.0,
+  "n_not_cleared": 0,
+  "remaining_if_fail": [],
+  "stop_reason_counts": {
+    "certificate": 1000
+  },
+  "time_mean": 4506.497003598714,
+  "time_p50": 4321.486106510252,
+  "time_min": 3164.1575237498682,
+  "time_max": 7933.795445604684,
+  "time_stdev": 721.7168477986099,
+  "time_mean_cleared": 4506.497003598714,
+  "s_per_source_mean": 350.99349559672766,
+  "walk_mean": 17722.385017993594,
+  "measure_mean": 156.347,
+  "cover_mean": 7.0,
+  "cover7_frac": 1.0
+}

@@ -1,0 +1,29 @@
+{
+  "n": 200,
+  "seed": 2027,
+  "fidelity": "high",
+  "policy": "belief_v2_heard16_fakerings_omega_p1geom",
+  "official_simulator": false,
+  "stop_uses_oracle_remaining": false,
+  "baseline_belief_10k_mean_s": 4339.94,
+  "fullopt_godstop_10k_mean_s": 3797.54,
+  "wall_s": 26.29310703277588,
+  "workers": 7,
+  "clear_rate": 1.0,
+  "n_not_cleared": 0,
+  "remaining_if_fail": [],
+  "stop_reason_counts": {
+    "certificate": 200
+  },
+  "time_mean": 3868.1908648385934,
+  "time_p50": 3836.657893303305,
+  "time_min": 2906.181123562141,
+  "time_max": 6047.513205855376,
+  "time_stdev": 417.51690920857243,
+  "time_mean_cleared": 3868.1908648385934,
+  "walk_mean": 14340.979324192967,
+  "measure_mean": 156.575,
+  "replan_mean": 27.785,
+  "cover_mean": 7.0,
+  "cover7_frac": 1.0
+}

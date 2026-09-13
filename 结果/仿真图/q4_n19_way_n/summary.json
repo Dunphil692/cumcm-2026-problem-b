@@ -1,0 +1,86 @@
+{
+  "tag": "q4_n19_way_n",
+  "n": 20,
+  "seed": 2027,
+  "p_dir": 0.5,
+  "official_simulator": false,
+  "ways": [
+    0,
+    1,
+    2
+  ],
+  "spacings": [
+    700.0
+  ],
+  "gate_inner": false,
+  "wall_s": 237.43119478225708,
+  "workers": 7,
+  "cells": [
+    {
+      "way_n": 0,
+      "spacing": 700.0,
+      "gate_inner": false,
+      "paired_delta_vs_way0_sp700": null,
+      "n": 20,
+      "clear_rate": 1.0,
+      "n_not_cleared": 0,
+      "time_mean": 6714.43716694329,
+      "time_p50": 6551.6227079417495,
+      "time_min": 5730.681632846289,
+      "time_max": 8189.84056188297,
+      "time_mean_cleared": 6714.43716694329,
+      "walk_mean": 23941.93583471646,
+      "measure_mean": 312.25,
+      "cover_mean": 19.0,
+      "way_stops_mean": 0.0,
+      "opp_unheard_mean": 1.65,
+      "wall_mean": 12.446581479199812
+    },
+    {
+      "way_n": 1,
+      "spacing": 700.0,
+      "gate_inner": false,
+      "paired_delta_vs_way0_sp700": 660.7648807740609,
+      "n": 20,
+      "clear_rate": 0.95,
+      "n_not_cleared": 1,
+      "time_mean": 7375.202047717352,
+      "time_p50": 7485.30668125153,
+      "time_min": 6159.937235679787,
+      "time_max": 8200.258470113366,
+      "time_mean_cleared": 7389.547875176536,
+      "walk_mean": 22700.260238586772,
+      "measure_mean": 464.0,
+      "cover_mean": 18.15,
+      "way_stops_mean": 15.35,
+      "opp_unheard_mean": 166.45,
+      "wall_mean": 14.863538004095608
+    },
+    {
+      "way_n": 2,
+      "spacing": 700.0,
+      "gate_inner": false,
+      "paired_delta_vs_way0_sp700": 1923.8336804735634,
+      "n": 20,
+      "clear_rate": 1.0,
+      "n_not_cleared": 0,
+      "time_mean": 8638.270847416854,
+      "time_p50": 8791.311297357985,
+      "time_min": 6979.206988019551,
+      "time_max": 10522.25982071512,
+      "time_mean_cleared": 8638.270847416854,
+      "walk_mean": 23608.35423708429,
+      "measure_mean": 644.15,
+      "cover_mean": 18.1,
+      "way_stops_mean": 29.8,
+      "opp_unheard_mean": 312.3,
+      "wall_mean": 47.46345256035274
+    }
+  ],
+  "fastest": {
+    "way_n": 0,
+    "spacing": 700.0,
+    "time_mean": 6714.43716694329,
+    "clear_rate": 1.0
+  }
+}

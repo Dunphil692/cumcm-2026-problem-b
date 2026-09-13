@@ -1,0 +1,40 @@
+{
+  "n": 10000,
+  "seed": 2027,
+  "fidelity": "high",
+  "official_simulator": false,
+  "wall_s": 776.8133871555328,
+  "workers": 8,
+  "limited": {
+    "n": 10000,
+    "clear_rate": 0.9972,
+    "n_not_cleared": 28,
+    "time_mean": 5511.925573858705,
+    "time_p50": 5409.808163112238,
+    "time_min": 3402.816947604572,
+    "time_max": 133698.60416209715,
+    "time_stdev": 2249.6107957259396,
+    "walk_mean": 22536.45786929353,
+    "measure_mean": 155.1699,
+    "replan_mean": 7.9058,
+    "wall_s": 769.7636242232693,
+    "wall_mean_ms": 76.97636242232693
+  },
+  "belief": {
+    "n": 10000,
+    "clear_rate": 0.9874,
+    "n_not_cleared": 126,
+    "time_mean": 4339.940378936784,
+    "time_p50": 4286.988968130377,
+    "time_min": 2181.1461379074017,
+    "time_max": 112964.97298557825,
+    "time_stdev": 1624.8631888388556,
+    "walk_mean": 16616.984894683923,
+    "measure_mean": 158.697,
+    "replan_mean": 31.0914,
+    "wall_s": 5310.588412675541,
+    "wall_mean_ms": 531.058841267554
+  },
+  "belief_win_rate": 0.9715,
+  "mean_delta_s": -1171.9851949219208
+}

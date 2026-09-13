@@ -1,0 +1,10 @@
+问题3 正式测试三次（表1）
+平均定位清除时间 = 总虚拟时间 / 清除个数
+程序运行时间 = /enter 到 /exit 墙钟
+
+序号  案例编码              清除个数  总虚拟时间/s  平均/s   程序运行时间/s  日志
+1     S589-ME5P-AVEG-7FVF  16        3524.51       220.28   2.694           formal-p3-1-S589-ME5P-AVEG-7FVF.jlog
+2     CRNF-M248-R8CD-3QE2  13        3362.51       258.65   1.987           formal-p3-2-CRNF-M248-R8CD-3QE2.jlog
+3     G3WW-HEAT-UQXS-8K7V  12        3001.98       250.17   2.519           formal-p3-3-G3WW-HEAT-UQXS-8K7V.jlog
+
+三次均为证书停机、清除失败 0、正常退出。

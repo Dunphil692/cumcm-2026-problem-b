@@ -1,0 +1,13 @@
+问题3正式第2次
+案例编码: CRNF-M248-R8CD-3QE2
+jlog: formal-p3-2-CRNF-M248-R8CD-3QE2.jlog（勿改名）
+
+cleared_ok: 13
+clear_fail: 0
+虚拟时间 time_s: 3362.511007
+平均定位清除时间: 258.65 s
+走路: 12937.56 m
+检测次数: 119
+停机: certificate
+退出: user_exit
+程序运行时间: 1.987 s
