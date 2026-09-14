@@ -4,7 +4,7 @@
 
 赛时：2026-09-10 18:00 → 2026-09-13 20:00。
 
-仓库当前为 **private**，只有协作者能看。
+公开仓库：https://github.com/Dunphil692/cumcm-2026-problem-b
 
 ## 交卷文件
 
